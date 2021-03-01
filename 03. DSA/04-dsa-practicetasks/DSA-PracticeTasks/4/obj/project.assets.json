@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\4\\02. Students order V3.csproj",
+      "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\4\\02. Students order V3.csproj",
       "projectName": "02. Students order V3",
-      "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\4\\02. Students order V3.csproj",
+      "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\4\\02. Students order V3.csproj",
       "packagesPath": "C:\\Users\\Bambi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\4\\obj\\",
+      "outputPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bambi\\AppData\\Roaming\\NuGet\\NuGet.Config",

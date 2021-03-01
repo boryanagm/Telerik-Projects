@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\03 HDNL Toy\\03 HDNL Toy.csproj": {}
+    "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\03 HDNL Toy\\03 HDNL Toy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\03 HDNL Toy\\03 HDNL Toy.csproj": {
+    "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\03 HDNL Toy\\03 HDNL Toy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\03 HDNL Toy\\03 HDNL Toy.csproj",
+        "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\03 HDNL Toy\\03 HDNL Toy.csproj",
         "projectName": "03 HDNL Toy",
-        "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\03 HDNL Toy\\03 HDNL Toy.csproj",
+        "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\03 HDNL Toy\\03 HDNL Toy.csproj",
         "packagesPath": "C:\\Users\\Bambi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\03 HDNL Toy\\obj\\",
+        "outputPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\03 HDNL Toy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bambi\\AppData\\Roaming\\NuGet\\NuGet.Config",

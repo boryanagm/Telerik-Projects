@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\DSA-PracticeTasks\\01. Jumps.csproj",
+      "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\DSA-PracticeTasks\\01. Jumps.csproj",
       "projectName": "01. Jumps",
-      "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\DSA-PracticeTasks\\01. Jumps.csproj",
+      "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\DSA-PracticeTasks\\01. Jumps.csproj",
       "packagesPath": "C:\\Users\\Bambi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\DSA-PracticeTasks\\obj\\",
+      "outputPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\DSA-PracticeTasks\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bambi\\AppData\\Roaming\\NuGet\\NuGet.Config",
