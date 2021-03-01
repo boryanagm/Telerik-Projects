@@ -1,0 +1,12 @@
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\4\bin\Debug\netcoreapp3.1\4.exe
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\4\bin\Debug\netcoreapp3.1\4.deps.json
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\4\bin\Debug\netcoreapp3.1\4.runtimeconfig.json
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\4\bin\Debug\netcoreapp3.1\4.runtimeconfig.dev.json
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\4\bin\Debug\netcoreapp3.1\4.dll
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\4\bin\Debug\netcoreapp3.1\4.pdb
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\4\obj\Debug\netcoreapp3.1\4.AssemblyInfoInputs.cache
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\4\obj\Debug\netcoreapp3.1\4.AssemblyInfo.cs
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\4\obj\Debug\netcoreapp3.1\4.csproj.CoreCompileInputs.cache
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\4\obj\Debug\netcoreapp3.1\4.dll
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\4\obj\Debug\netcoreapp3.1\4.pdb
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\4\obj\Debug\netcoreapp3.1\4.genruntimeconfig.cache

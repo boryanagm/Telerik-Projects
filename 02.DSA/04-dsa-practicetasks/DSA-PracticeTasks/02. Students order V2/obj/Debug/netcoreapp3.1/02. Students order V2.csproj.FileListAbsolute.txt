@@ -1,0 +1,13 @@
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\02. Students order V2\bin\Debug\netcoreapp3.1\02. Students order V2.exe
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\02. Students order V2\bin\Debug\netcoreapp3.1\02. Students order V2.deps.json
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\02. Students order V2\bin\Debug\netcoreapp3.1\02. Students order V2.runtimeconfig.json
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\02. Students order V2\bin\Debug\netcoreapp3.1\02. Students order V2.runtimeconfig.dev.json
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\02. Students order V2\bin\Debug\netcoreapp3.1\02. Students order V2.dll
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\02. Students order V2\bin\Debug\netcoreapp3.1\02. Students order V2.pdb
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\02. Students order V2\obj\Debug\netcoreapp3.1\02. Students order V2.csprojAssemblyReference.cache
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\02. Students order V2\obj\Debug\netcoreapp3.1\02. Students order V2.AssemblyInfoInputs.cache
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\02. Students order V2\obj\Debug\netcoreapp3.1\02. Students order V2.AssemblyInfo.cs
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\02. Students order V2\obj\Debug\netcoreapp3.1\02. Students order V2.csproj.CoreCompileInputs.cache
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\02. Students order V2\obj\Debug\netcoreapp3.1\02. Students order V2.dll
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\02. Students order V2\obj\Debug\netcoreapp3.1\02. Students order V2.pdb
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04.-PracticeTasks\dsa-practicetasks\DSA-PracticeTasks\02. Students order V2\obj\Debug\netcoreapp3.1\02. Students order V2.genruntimeconfig.cache

@@ -1,0 +1,13 @@
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04-dsa-practicetasks\DSA-PracticeTasks\03 HDNL Toy\bin\Debug\netcoreapp3.1\03 HDNL Toy.exe
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04-dsa-practicetasks\DSA-PracticeTasks\03 HDNL Toy\bin\Debug\netcoreapp3.1\03 HDNL Toy.deps.json
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04-dsa-practicetasks\DSA-PracticeTasks\03 HDNL Toy\bin\Debug\netcoreapp3.1\03 HDNL Toy.runtimeconfig.json
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04-dsa-practicetasks\DSA-PracticeTasks\03 HDNL Toy\bin\Debug\netcoreapp3.1\03 HDNL Toy.runtimeconfig.dev.json
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04-dsa-practicetasks\DSA-PracticeTasks\03 HDNL Toy\bin\Debug\netcoreapp3.1\03 HDNL Toy.dll
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04-dsa-practicetasks\DSA-PracticeTasks\03 HDNL Toy\bin\Debug\netcoreapp3.1\03 HDNL Toy.pdb
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04-dsa-practicetasks\DSA-PracticeTasks\03 HDNL Toy\obj\Debug\netcoreapp3.1\03 HDNL Toy.csprojAssemblyReference.cache
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04-dsa-practicetasks\DSA-PracticeTasks\03 HDNL Toy\obj\Debug\netcoreapp3.1\03 HDNL Toy.AssemblyInfoInputs.cache
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04-dsa-practicetasks\DSA-PracticeTasks\03 HDNL Toy\obj\Debug\netcoreapp3.1\03 HDNL Toy.AssemblyInfo.cs
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04-dsa-practicetasks\DSA-PracticeTasks\03 HDNL Toy\obj\Debug\netcoreapp3.1\03 HDNL Toy.csproj.CoreCompileInputs.cache
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04-dsa-practicetasks\DSA-PracticeTasks\03 HDNL Toy\obj\Debug\netcoreapp3.1\03 HDNL Toy.dll
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04-dsa-practicetasks\DSA-PracticeTasks\03 HDNL Toy\obj\Debug\netcoreapp3.1\03 HDNL Toy.pdb
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\3. DSA\04-dsa-practicetasks\DSA-PracticeTasks\03 HDNL Toy\obj\Debug\netcoreapp3.1\03 HDNL Toy.genruntimeconfig.cache
