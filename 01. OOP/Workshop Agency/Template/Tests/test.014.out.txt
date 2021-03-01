@@ -1,0 +1,6 @@
+Vehicle with ID 0 was created.
+####################
+ERROR: The length of Destination must be between 5 and 25 symbols.
+####################
+ERROR: The length of Destination must be between 5 and 25 symbols.
+####################

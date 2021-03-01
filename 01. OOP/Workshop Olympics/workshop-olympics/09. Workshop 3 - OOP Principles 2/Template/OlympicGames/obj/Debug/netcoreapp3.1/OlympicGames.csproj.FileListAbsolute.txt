@@ -1,0 +1,13 @@
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\OOP\Workshop Olympics\workshop-olympics\09. Workshop 3 - OOP Principles 2\Template\OlympicGames\bin\Debug\netcoreapp3.1\OlympicGames.exe
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\OOP\Workshop Olympics\workshop-olympics\09. Workshop 3 - OOP Principles 2\Template\OlympicGames\bin\Debug\netcoreapp3.1\OlympicGames.deps.json
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\OOP\Workshop Olympics\workshop-olympics\09. Workshop 3 - OOP Principles 2\Template\OlympicGames\bin\Debug\netcoreapp3.1\OlympicGames.runtimeconfig.json
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\OOP\Workshop Olympics\workshop-olympics\09. Workshop 3 - OOP Principles 2\Template\OlympicGames\bin\Debug\netcoreapp3.1\OlympicGames.runtimeconfig.dev.json
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\OOP\Workshop Olympics\workshop-olympics\09. Workshop 3 - OOP Principles 2\Template\OlympicGames\bin\Debug\netcoreapp3.1\OlympicGames.dll
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\OOP\Workshop Olympics\workshop-olympics\09. Workshop 3 - OOP Principles 2\Template\OlympicGames\bin\Debug\netcoreapp3.1\OlympicGames.pdb
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\OOP\Workshop Olympics\workshop-olympics\09. Workshop 3 - OOP Principles 2\Template\OlympicGames\obj\Debug\netcoreapp3.1\OlympicGames.csprojAssemblyReference.cache
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\OOP\Workshop Olympics\workshop-olympics\09. Workshop 3 - OOP Principles 2\Template\OlympicGames\obj\Debug\netcoreapp3.1\OlympicGames.AssemblyInfoInputs.cache
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\OOP\Workshop Olympics\workshop-olympics\09. Workshop 3 - OOP Principles 2\Template\OlympicGames\obj\Debug\netcoreapp3.1\OlympicGames.AssemblyInfo.cs
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\OOP\Workshop Olympics\workshop-olympics\09. Workshop 3 - OOP Principles 2\Template\OlympicGames\obj\Debug\netcoreapp3.1\OlympicGames.csproj.CoreCompileInputs.cache
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\OOP\Workshop Olympics\workshop-olympics\09. Workshop 3 - OOP Principles 2\Template\OlympicGames\obj\Debug\netcoreapp3.1\OlympicGames.dll
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\OOP\Workshop Olympics\workshop-olympics\09. Workshop 3 - OOP Principles 2\Template\OlympicGames\obj\Debug\netcoreapp3.1\OlympicGames.pdb
+C:\Users\Bambi\Desktop\Telerik\Alpha 26\OOP\Workshop Olympics\workshop-olympics\09. Workshop 3 - OOP Principles 2\Template\OlympicGames\obj\Debug\netcoreapp3.1\OlympicGames.genruntimeconfig.cache

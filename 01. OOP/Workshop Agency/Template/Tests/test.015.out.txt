@@ -1,0 +1,6 @@
+Vehicle with ID 0 was created.
+####################
+ERROR: Distance must be between 5 and 5000 kilometers.
+####################
+ERROR: Distance must be between 5 and 5000 kilometers.
+####################

@@ -1,0 +1,4 @@
+ERROR: A bus cannot have less than 10 passengers or more than 50 passengers.
+####################
+ERROR: A bus cannot have less than 10 passengers or more than 50 passengers.
+####################

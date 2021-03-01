@@ -1,0 +1,4 @@
+Vehicle with ID 0 was created.
+####################
+ERROR: Failed to parse CreateJourney command parameters.
+####################

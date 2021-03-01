@@ -1,0 +1,23 @@
+Vehicle with ID 0 was created.
+####################
+Bus ----
+Passenger capacity: 10
+Price per kilometer: 0.7
+Vehicle type: Land
+Has free TV: True
+####################
+Journey with ID 0 was created.
+####################
+Journey ----
+Start location: Sofia
+Destination: Turnovo
+Distance: 300
+Vehicle type: Land
+Travel costs: 210
+####################
+Ticket with ID 0 was created.
+####################
+Ticket ----
+Destination: Turnovo
+Price: 240
+####################

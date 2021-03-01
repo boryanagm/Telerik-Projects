@@ -1,0 +1,4 @@
+ERROR: A train cannot have less than 30 passengers or more than 150 passengers.
+####################
+ERROR: A train cannot have less than 30 passengers or more than 150 passengers.
+####################
