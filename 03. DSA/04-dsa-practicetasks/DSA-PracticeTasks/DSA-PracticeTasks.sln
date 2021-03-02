@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Students order V2", "02
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Students order V3", "4\02. Students order V3.csproj", "{9F066047-6EFE-4F6C-A735-DD1D1360407E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 HDNL Toy", "03 HDNL Toy\03 HDNL Toy.csproj", "{FF1695FF-EB2D-44D4-930C-BAFEE1B92B34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03 HDNL Toy", "03 HDNL Toy\03 HDNL Toy.csproj", "{FF1695FF-EB2D-44D4-930C-BAFEE1B92B34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 HDNL Toy V3", "03 HDNL Toy V3\03 HDNL Toy V3.csproj", "{B659B8A8-1A3D-439A-AA7E-74A63FA35171}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{FF1695FF-EB2D-44D4-930C-BAFEE1B92B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF1695FF-EB2D-44D4-930C-BAFEE1B92B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF1695FF-EB2D-44D4-930C-BAFEE1B92B34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B659B8A8-1A3D-439A-AA7E-74A63FA35171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B659B8A8-1A3D-439A-AA7E-74A63FA35171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B659B8A8-1A3D-439A-AA7E-74A63FA35171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B659B8A8-1A3D-439A-AA7E-74A63FA35171}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -27,10 +27,10 @@ class Program
         {
             int currentNum = numbers[i];
 
-            if (currentNum > dict.Keys[])
-            {
+            //if (currentNum > dict.Keys[])
+            //{
 
-            }
+            //}
         }
 
 
