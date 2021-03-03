@@ -1,0 +1,12 @@
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\01. Jumps V3\bin\Debug\netcoreapp3.1\01. Jumps V3.exe
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\01. Jumps V3\bin\Debug\netcoreapp3.1\01. Jumps V3.deps.json
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\01. Jumps V3\bin\Debug\netcoreapp3.1\01. Jumps V3.runtimeconfig.json
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\01. Jumps V3\bin\Debug\netcoreapp3.1\01. Jumps V3.runtimeconfig.dev.json
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\01. Jumps V3\bin\Debug\netcoreapp3.1\01. Jumps V3.dll
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\01. Jumps V3\bin\Debug\netcoreapp3.1\01. Jumps V3.pdb
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\01. Jumps V3\obj\Debug\netcoreapp3.1\01. Jumps V3.AssemblyInfoInputs.cache
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\01. Jumps V3\obj\Debug\netcoreapp3.1\01. Jumps V3.AssemblyInfo.cs
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\01. Jumps V3\obj\Debug\netcoreapp3.1\01. Jumps V3.csproj.CoreCompileInputs.cache
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\01. Jumps V3\obj\Debug\netcoreapp3.1\01. Jumps V3.dll
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\01. Jumps V3\obj\Debug\netcoreapp3.1\01. Jumps V3.pdb
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\01. Jumps V3\obj\Debug\netcoreapp3.1\01. Jumps V3.genruntimeconfig.cache

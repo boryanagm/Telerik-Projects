@@ -1,0 +1,12 @@
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V4\bin\Debug\netcoreapp3.1\02. Students order V4.exe
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V4\bin\Debug\netcoreapp3.1\02. Students order V4.deps.json
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V4\bin\Debug\netcoreapp3.1\02. Students order V4.runtimeconfig.json
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V4\bin\Debug\netcoreapp3.1\02. Students order V4.runtimeconfig.dev.json
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V4\bin\Debug\netcoreapp3.1\02. Students order V4.dll
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V4\bin\Debug\netcoreapp3.1\02. Students order V4.pdb
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V4\obj\Debug\netcoreapp3.1\02. Students order V4.AssemblyInfoInputs.cache
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V4\obj\Debug\netcoreapp3.1\02. Students order V4.AssemblyInfo.cs
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V4\obj\Debug\netcoreapp3.1\02. Students order V4.csproj.CoreCompileInputs.cache
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V4\obj\Debug\netcoreapp3.1\02. Students order V4.dll
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V4\obj\Debug\netcoreapp3.1\02. Students order V4.pdb
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V4\obj\Debug\netcoreapp3.1\02. Students order V4.genruntimeconfig.cache

@@ -14,16 +14,9 @@ class Program
 
         List<string> names = Console.ReadLine().Split(' ').ToList();
 
-        int extendedListCount = names.Count + (names.Count + 1) * seatChangesCount;
+        int extendedListCount = names.Count * seatChangesCount + names.Count + seatChangesCount;
 
-        //List<string> extendedList = new List<string>(Enumerable.Repeat(".", extendedListCount)); //Or for loop to populate
-
-        List<string> extendedList = new List<string>(); 
-
-        for (int i = 0; i < extendedListCount; i++)
-        {
-            extendedList.Add(".");
-        }
+        List<string> extendedList = new List<string>(Enumerable.Repeat("0", extendedListCount)); 
 
         for (int i = 0; i < names.Count; i++)
         {
@@ -39,24 +32,22 @@ class Program
             string rightName = namePairs[1];
 
             int removeCounter = 0;
-            int addCounter = 0;
             int operationCompleteCounter = 0;
 
-            for (int j = 0; j < extendedList.Count; j++)
+            for (int j = extendedList.Count - 1; j >= 0; j--)
             {
                 if (extendedList[j] == leftName && removeCounter == 0)
                 {
-                    extendedList[j] = ".";
+                    extendedList[j] = "0";
 
                     removeCounter++;
                     operationCompleteCounter++;
                 }
-                else if (extendedList[j] == rightName && addCounter == 0)
+                else if (extendedList[j] == rightName)
                 {
                     extendedList[j - 1] = leftName;
                     j--;
 
-                    addCounter++;
                     operationCompleteCounter++;
                 }
 
@@ -69,25 +60,12 @@ class Program
 
         for (int i = 0; i < extendedList.Count; i++)
         {
-            if (extendedList[i] == ".")
+            if (extendedList[i] == "0")
             {
                 extendedList.RemoveAt(i);
                 i--;
             }
-
-            //if (extendedList.Count == names.Count)
-            //{
-            //    break;
-            //}
         }
-
-        //for (int i = 0; i < extendedList.Count; i++)
-        //{
-        //    if (extendedList[i] != ".")
-        //    {
-        //        Console.Write(extendedList[i] + " ");
-        //    }
-        //}
         Console.WriteLine(string.Join(" ", extendedList));
     }
 }
