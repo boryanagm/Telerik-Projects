@@ -1,0 +1,13 @@
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\05. Workshop Doubly Linked List\Template\DoublyLinkedListWorkshop\bin\Debug\netcoreapp3.1\DoublyLinkedListWorkshop.exe
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\05. Workshop Doubly Linked List\Template\DoublyLinkedListWorkshop\bin\Debug\netcoreapp3.1\DoublyLinkedListWorkshop.deps.json
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\05. Workshop Doubly Linked List\Template\DoublyLinkedListWorkshop\bin\Debug\netcoreapp3.1\DoublyLinkedListWorkshop.runtimeconfig.json
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\05. Workshop Doubly Linked List\Template\DoublyLinkedListWorkshop\bin\Debug\netcoreapp3.1\DoublyLinkedListWorkshop.runtimeconfig.dev.json
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\05. Workshop Doubly Linked List\Template\DoublyLinkedListWorkshop\bin\Debug\netcoreapp3.1\DoublyLinkedListWorkshop.dll
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\05. Workshop Doubly Linked List\Template\DoublyLinkedListWorkshop\bin\Debug\netcoreapp3.1\DoublyLinkedListWorkshop.pdb
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\05. Workshop Doubly Linked List\Template\DoublyLinkedListWorkshop\obj\Debug\netcoreapp3.1\DoublyLinkedListWorkshop.csprojAssemblyReference.cache
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\05. Workshop Doubly Linked List\Template\DoublyLinkedListWorkshop\obj\Debug\netcoreapp3.1\DoublyLinkedListWorkshop.AssemblyInfoInputs.cache
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\05. Workshop Doubly Linked List\Template\DoublyLinkedListWorkshop\obj\Debug\netcoreapp3.1\DoublyLinkedListWorkshop.AssemblyInfo.cs
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\05. Workshop Doubly Linked List\Template\DoublyLinkedListWorkshop\obj\Debug\netcoreapp3.1\DoublyLinkedListWorkshop.csproj.CoreCompileInputs.cache
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\05. Workshop Doubly Linked List\Template\DoublyLinkedListWorkshop\obj\Debug\netcoreapp3.1\DoublyLinkedListWorkshop.dll
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\05. Workshop Doubly Linked List\Template\DoublyLinkedListWorkshop\obj\Debug\netcoreapp3.1\DoublyLinkedListWorkshop.pdb
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\05. Workshop Doubly Linked List\Template\DoublyLinkedListWorkshop\obj\Debug\netcoreapp3.1\DoublyLinkedListWorkshop.genruntimeconfig.cache

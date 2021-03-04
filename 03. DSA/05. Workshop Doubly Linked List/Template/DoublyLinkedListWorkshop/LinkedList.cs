@@ -40,26 +40,31 @@ public class LinkedList<T> : System.Collections.Generic.IEnumerable<T>
         get
         {
             int counter = 0;
+
             if (this.Head == null)
             {
                 return 0;
             }
+
             LinkedListNode<T> node = this.Head;
+
             while (node != null)
             {
                 counter++;
                 node = node.Next;
             }
+
             return counter;
         }
-
     }
 
     public void AddFirst(T value)
     {
         LinkedListNode<T> temp = new LinkedListNode<T>(value);
+
         temp.Previous = null;
         temp.Next = null;
+
         if (this.Head == null)
         {
             this.Head = temp;
@@ -71,8 +76,6 @@ public class LinkedList<T> : System.Collections.Generic.IEnumerable<T>
             temp.Next = this.Head;
             this.Head = temp;
         }
-
-
     }
 
     public void AddLast(T value)
@@ -87,10 +90,12 @@ public class LinkedList<T> : System.Collections.Generic.IEnumerable<T>
         else
         {
             LinkedListNode<T> current = this.Head;
+
             while (current.Next != null)
             {
                 current = current.Next;
             }
+
             current.Next = temp;
             temp.Previous = current;
             this.Tail = temp;
@@ -100,39 +105,62 @@ public class LinkedList<T> : System.Collections.Generic.IEnumerable<T>
     public void InsertBefore(LinkedListNode<T> node, T value)
     {
         LinkedListNode<T> current = this.Head;
+        LinkedListNode<T> nodeToInsert = new LinkedListNode<T>(value);
 
-        while (!current.Value.Equals(node.Value))
+        if (node.Value.Equals(current.Value))
+        {
+            this.Head.Previous = nodeToInsert;
+            nodeToInsert.Next = this.Head;
+            this.Head = nodeToInsert;
+        }
+        else
         {
             current = current.Next;
-        }
-        LinkedListNode<T> nodeBefore = current.Previous;
-        LinkedListNode<T> nodeToInsert = new LinkedListNode<T>(value);
-        nodeToInsert.Next = current;
-        current.Previous = nodeToInsert;
-        nodeBefore.Next = nodeToInsert;
-        nodeToInsert.Previous = nodeBefore;
 
+            while (!current.Value.Equals(node.Value))
+            {
+                current = current.Next;
+            }
+
+            LinkedListNode<T> previousNode = current.Previous;
+
+            nodeToInsert.Next = current;
+            current.Previous = nodeToInsert;
+            previousNode.Next = nodeToInsert;
+            nodeToInsert.Previous = previousNode;
+        }
     }
 
     public void InsertAfter(LinkedListNode<T> node, T value)
     {
         LinkedListNode<T> current = this.Head;
+        LinkedListNode<T> nodeToInsert = new LinkedListNode<T>(value);
 
         while (!current.Value.Equals(node.Value))
         {
-
             current = current.Next;
             if (current == null)
             {
                 throw new ArgumentException();
             }
         }
-        LinkedListNode<T> nodeAfter = current.Next;
-        LinkedListNode<T> nodeToInsert = new LinkedListNode<T>(value);
-        nodeToInsert.Next = nodeAfter;
-        current.Next = nodeToInsert;
-        nodeAfter.Previous = nodeToInsert;
-        nodeToInsert.Next = nodeAfter;
+        if (current == this.Tail)
+        {
+            current.Next = nodeToInsert;
+            nodeToInsert.Next = null;
+            nodeToInsert.Previous = current;
+
+            this.Tail = nodeToInsert;
+        }
+        else
+        {
+            LinkedListNode<T> nodeAfter = current.Next;
+
+            nodeToInsert.Next = nodeAfter;
+            current.Next = nodeToInsert;
+            nodeAfter.Previous = nodeToInsert;
+            nodeToInsert.Next = nodeAfter;
+        }
     }
 
     public bool Remove(T value)
@@ -188,7 +216,7 @@ public class LinkedList<T> : System.Collections.Generic.IEnumerable<T>
             this.Head = this.Head.Next;
             temp = null;
             this.Head.Previous = null;
-        }        
+        }
     }
 
     public void RemoveLast()
@@ -247,10 +275,10 @@ public class LinkedList<T> : System.Collections.Generic.IEnumerable<T>
         {
             current = this.Head;
             this.Head = this.Head.Next;
-            current = null;           
+            current = null;
         }
-        this.Tail = null;
 
+        this.Tail = null;
     }
 
     // Enumerates over the linked list values from Head to Tail
