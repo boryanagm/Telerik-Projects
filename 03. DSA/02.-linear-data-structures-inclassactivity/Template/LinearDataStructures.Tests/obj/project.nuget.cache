@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I87kR1snbBCNZSmeSqEK1PVpJWmVqXWcZsSP8BQDvc05S+sn0b91u8vXLIcqGKry5HBLFMaGoTyTB978S7QJcA==",
+  "dgSpecHash": "5rKOlJpNYG5AUbk+w8aBOMdUD7KXWL/+2FV6Mz+16cMrS7kxifGTjZL0R5IIB/XxiyZmq8y9TSHF4ThkwkxHxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures.Tests\\LinearDataStructures.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures.Tests\\LinearDataStructures.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bambi\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\Bambi\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",

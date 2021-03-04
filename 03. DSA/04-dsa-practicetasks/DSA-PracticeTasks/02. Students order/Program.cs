@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 class Program
 {
@@ -10,22 +11,23 @@ class Program
 
         int studentsCount = studentsSeatsPair[0];
         int seatChangesCount = studentsSeatsPair[1];
+       
         int temp = seatChangesCount;
 
-        List<string> names = Console.ReadLine().Split(' ').ToList();
+        string[] names = Console.ReadLine().Split(' ');
+       
+        int extendedListCount = names.Length + (names.Length + 1) * seatChangesCount;
 
-        int extendedListCount = names.Count + (names.Count + 1) * seatChangesCount;
+        List<string> extendedList = new List<string>(Enumerable.Repeat("=", extendedListCount)); //Or for loop to populate
 
-        //List<string> extendedList = new List<string>(Enumerable.Repeat(".", extendedListCount)); //Or for loop to populate
+        //List<string> extendedList = new List<string>(); 
 
-        List<string> extendedList = new List<string>(); 
+        //for (int i = 0; i < extendedListCount; i++)
+        //{
+        //    extendedList.Add("=");
+        //}
 
-        for (int i = 0; i < extendedListCount; i++)
-        {
-            extendedList.Add(".");
-        }
-
-        for (int i = 0; i < names.Count; i++)
+        for (int i = 0; i < names.Length; i++)
         {
             extendedList[i + temp] = names[i];
             temp += seatChangesCount;
@@ -46,7 +48,7 @@ class Program
             {
                 if (extendedList[j] == leftName && removeCounter == 0)
                 {
-                    extendedList[j] = ".";
+                    extendedList[j] = "=";
 
                     removeCounter++;
                     operationCompleteCounter++;
@@ -54,7 +56,7 @@ class Program
                 else if (extendedList[j] == rightName && addCounter == 0)
                 {
                     extendedList[j - 1] = leftName;
-                    j--;
+                 //   j--;
 
                     addCounter++;
                     operationCompleteCounter++;
@@ -67,27 +69,39 @@ class Program
             }
         }
 
+        StringBuilder sb = new StringBuilder();
+
         for (int i = 0; i < extendedList.Count; i++)
         {
-            if (extendedList[i] == ".")
+           
+            if (extendedList[i] != "=")
             {
-                extendedList.RemoveAt(i);
-                i--;
+                sb.Append(extendedList[i] + " ");
             }
 
-            //if (extendedList.Count == names.Count)
-            //{
-            //    break;
-            //}
         }
 
         //for (int i = 0; i < extendedList.Count; i++)
         //{
-        //    if (extendedList[i] != ".")
+        //    if (extendedList[i] == "=")
+        //    {
+        //        extendedList.RemoveAt(i);
+        //        i--;
+        //    }
+
+        //    //if (extendedList.Count == names.Count)
+        //    //{
+        //    //    break;
+        //    //}
+        //}
+
+        //for (int i = 0; i < extendedList.Count; i++)
+        //{
+        //    if (extendedList[i] != "=")
         //    {
         //        Console.Write(extendedList[i] + " ");
         //    }
         //}
-        Console.WriteLine(string.Join(" ", extendedList));
+        Console.WriteLine(string.Join(" ", sb));
     }
 }

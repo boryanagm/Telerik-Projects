@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures.Tests\\LinearDataStructures.Tests.csproj": {}
+    "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures.Tests\\LinearDataStructures.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures.Tests\\LinearDataStructures.Tests.csproj": {
+    "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures.Tests\\LinearDataStructures.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures.Tests\\LinearDataStructures.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures.Tests\\LinearDataStructures.Tests.csproj",
         "projectName": "LinearDataStructures.Tests",
-        "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures.Tests\\LinearDataStructures.Tests.csproj",
+        "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures.Tests\\LinearDataStructures.Tests.csproj",
         "packagesPath": "C:\\Users\\Bambi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures.Tests\\obj\\",
+        "outputPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bambi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\LinearDataStructures.csproj": {
-                "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\LinearDataStructures.csproj"
+              "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\LinearDataStructures.csproj": {
+                "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\LinearDataStructures.csproj"
               }
             }
           }
@@ -80,14 +80,14 @@
         }
       }
     },
-    "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\LinearDataStructures.csproj": {
+    "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\LinearDataStructures.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\LinearDataStructures.csproj",
+        "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\LinearDataStructures.csproj",
         "projectName": "LinearDataStructures",
-        "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\LinearDataStructures.csproj",
+        "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\LinearDataStructures.csproj",
         "packagesPath": "C:\\Users\\Bambi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\obj\\",
+        "outputPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bambi\\AppData\\Roaming\\NuGet\\NuGet.Config",

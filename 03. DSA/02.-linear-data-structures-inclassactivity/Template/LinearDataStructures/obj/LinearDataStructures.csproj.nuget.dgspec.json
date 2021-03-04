@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\LinearDataStructures.csproj": {}
+    "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\LinearDataStructures.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\LinearDataStructures.csproj": {
+    "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\LinearDataStructures.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\LinearDataStructures.csproj",
+        "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\LinearDataStructures.csproj",
         "projectName": "LinearDataStructures",
-        "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\LinearDataStructures.csproj",
+        "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\LinearDataStructures.csproj",
         "packagesPath": "C:\\Users\\Bambi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\obj\\",
+        "outputPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\02.-linear-data-structures-inclassactivity\\Template\\LinearDataStructures\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bambi\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,13 @@
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V5\bin\Debug\netcoreapp3.1\02. Students order V5.exe
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V5\bin\Debug\netcoreapp3.1\02. Students order V5.deps.json
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V5\bin\Debug\netcoreapp3.1\02. Students order V5.runtimeconfig.json
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V5\bin\Debug\netcoreapp3.1\02. Students order V5.runtimeconfig.dev.json
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V5\bin\Debug\netcoreapp3.1\02. Students order V5.dll
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V5\bin\Debug\netcoreapp3.1\02. Students order V5.pdb
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V5\obj\Debug\netcoreapp3.1\02. Students order V5.AssemblyInfoInputs.cache
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V5\obj\Debug\netcoreapp3.1\02. Students order V5.AssemblyInfo.cs
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V5\obj\Debug\netcoreapp3.1\02. Students order V5.csproj.CoreCompileInputs.cache
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V5\obj\Debug\netcoreapp3.1\02. Students order V5.dll
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V5\obj\Debug\netcoreapp3.1\02. Students order V5.pdb
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V5\obj\Debug\netcoreapp3.1\02. Students order V5.genruntimeconfig.cache
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\02. Students order V5\obj\Debug\netcoreapp3.1\02. Students order V5.csprojAssemblyReference.cache

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\03.-In-home activity\\02. LinkedList\\Template\\LinkedList.csproj": {}
+    "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\03.-In-home activity\\02. LinkedList\\Template\\LinkedList.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\03.-In-home activity\\02. LinkedList\\Template\\LinkedList.csproj": {
+    "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\03.-In-home activity\\02. LinkedList\\Template\\LinkedList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\03.-In-home activity\\02. LinkedList\\Template\\LinkedList.csproj",
+        "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\03.-In-home activity\\02. LinkedList\\Template\\LinkedList.csproj",
         "projectName": "LinkedList",
-        "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\03.-In-home activity\\02. LinkedList\\Template\\LinkedList.csproj",
+        "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\03.-In-home activity\\02. LinkedList\\Template\\LinkedList.csproj",
         "packagesPath": "C:\\Users\\Bambi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\03.-In-home activity\\02. LinkedList\\Template\\obj\\",
+        "outputPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\03.-In-home activity\\02. LinkedList\\Template\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bambi\\AppData\\Roaming\\NuGet\\NuGet.Config",
