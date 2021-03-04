@@ -1,0 +1,12 @@
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\04. Find middle node doubly linked\bin\Debug\netcoreapp3.1\04. Find middle node doubly linked.exe
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\04. Find middle node doubly linked\bin\Debug\netcoreapp3.1\04. Find middle node doubly linked.deps.json
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\04. Find middle node doubly linked\bin\Debug\netcoreapp3.1\04. Find middle node doubly linked.runtimeconfig.json
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\04. Find middle node doubly linked\bin\Debug\netcoreapp3.1\04. Find middle node doubly linked.runtimeconfig.dev.json
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\04. Find middle node doubly linked\bin\Debug\netcoreapp3.1\04. Find middle node doubly linked.dll
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\04. Find middle node doubly linked\bin\Debug\netcoreapp3.1\04. Find middle node doubly linked.pdb
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\04. Find middle node doubly linked\obj\Debug\netcoreapp3.1\04. Find middle node doubly linked.AssemblyInfoInputs.cache
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\04. Find middle node doubly linked\obj\Debug\netcoreapp3.1\04. Find middle node doubly linked.AssemblyInfo.cs
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\04. Find middle node doubly linked\obj\Debug\netcoreapp3.1\04. Find middle node doubly linked.csproj.CoreCompileInputs.cache
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\04. Find middle node doubly linked\obj\Debug\netcoreapp3.1\04. Find middle node doubly linked.dll
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\04. Find middle node doubly linked\obj\Debug\netcoreapp3.1\04. Find middle node doubly linked.pdb
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\04-dsa-practicetasks\DSA-PracticeTasks\04. Find middle node doubly linked\obj\Debug\netcoreapp3.1\04. Find middle node doubly linked.genruntimeconfig.cache
