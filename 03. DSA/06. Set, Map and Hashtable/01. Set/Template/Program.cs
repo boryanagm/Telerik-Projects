@@ -11,7 +11,14 @@ namespace InHomeActivity.Set
 
         static bool AreAllElementsUnique<T>(ICollection<T> collection)
         {
-            throw new NotImplementedException();
+            HashSet<T> set = new HashSet<T>(collection);
+
+            if (set.Count == collection.Count)
+            {
+                return true;
+            }
+
+            return false;
         }
         static bool AreAllElementsUnique<T>(IEnumerable<T> collection)
         {
