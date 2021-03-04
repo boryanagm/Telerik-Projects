@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ns5g7q8SJIrzHPfGcYbx0F3hJE1lH1/DBeY+tyXL7+hbB6wFuU9EIHSNHmokbxJccnXRCPXsahormUhDOEPK0Q==",
+  "dgSpecHash": "AO7tUFjkpuqCkDk4a9D553fWyjSjOFRxG+SEp6IUvSzxQSRxk/+9zlOGIQl5fLpO2/xt3TncQVCbIEKZQ5eV2w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\01. Workshop Stack and Queue\\Template\\StackQueueWorkshop.Tests\\StackQueueWorkshop.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\01. Workshop Stack and Queue\\Template\\StackQueueWorkshop.Tests\\StackQueueWorkshop.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bambi\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\Bambi\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",

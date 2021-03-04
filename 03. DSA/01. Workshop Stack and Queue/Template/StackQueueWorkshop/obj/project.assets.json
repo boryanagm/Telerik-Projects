@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\01. Workshop Stack and Queue\\Template\\StackQueueWorkshop\\StackQueueWorkshop.csproj",
+      "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\01. Workshop Stack and Queue\\Template\\StackQueueWorkshop\\StackQueueWorkshop.csproj",
       "projectName": "StackQueueWorkshop",
-      "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\01. Workshop Stack and Queue\\Template\\StackQueueWorkshop\\StackQueueWorkshop.csproj",
+      "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\01. Workshop Stack and Queue\\Template\\StackQueueWorkshop\\StackQueueWorkshop.csproj",
       "packagesPath": "C:\\Users\\Bambi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\01. Workshop Stack and Queue\\Template\\StackQueueWorkshop\\obj\\",
+      "outputPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\01. Workshop Stack and Queue\\Template\\StackQueueWorkshop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bambi\\AppData\\Roaming\\NuGet\\NuGet.Config",

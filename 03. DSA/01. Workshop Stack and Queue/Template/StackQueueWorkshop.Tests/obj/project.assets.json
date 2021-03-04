@@ -5737,11 +5737,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\01. Workshop Stack and Queue\\Template\\StackQueueWorkshop.Tests\\StackQueueWorkshop.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\01. Workshop Stack and Queue\\Template\\StackQueueWorkshop.Tests\\StackQueueWorkshop.Tests.csproj",
       "projectName": "StackQueueWorkshop.Tests",
-      "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\01. Workshop Stack and Queue\\Template\\StackQueueWorkshop.Tests\\StackQueueWorkshop.Tests.csproj",
+      "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\01. Workshop Stack and Queue\\Template\\StackQueueWorkshop.Tests\\StackQueueWorkshop.Tests.csproj",
       "packagesPath": "C:\\Users\\Bambi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\01. Workshop Stack and Queue\\Template\\StackQueueWorkshop.Tests\\obj\\",
+      "outputPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\01. Workshop Stack and Queue\\Template\\StackQueueWorkshop.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bambi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5758,8 +5758,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\01. Workshop Stack and Queue\\Template\\StackQueueWorkshop\\StackQueueWorkshop.csproj": {
-              "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\Alpha 26\\3. DSA\\01. Workshop Stack and Queue\\Template\\StackQueueWorkshop\\StackQueueWorkshop.csproj"
+            "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\01. Workshop Stack and Queue\\Template\\StackQueueWorkshop\\StackQueueWorkshop.csproj": {
+              "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\01. Workshop Stack and Queue\\Template\\StackQueueWorkshop\\StackQueueWorkshop.csproj"
             }
           }
         }

@@ -1,0 +1,13 @@
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\01. Workshop Stack and Queue\Template\StackQueueWorkshop\bin\Debug\netcoreapp3.1\StackQueueWorkshop.exe
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\01. Workshop Stack and Queue\Template\StackQueueWorkshop\bin\Debug\netcoreapp3.1\StackQueueWorkshop.deps.json
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\01. Workshop Stack and Queue\Template\StackQueueWorkshop\bin\Debug\netcoreapp3.1\StackQueueWorkshop.runtimeconfig.json
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\01. Workshop Stack and Queue\Template\StackQueueWorkshop\bin\Debug\netcoreapp3.1\StackQueueWorkshop.runtimeconfig.dev.json
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\01. Workshop Stack and Queue\Template\StackQueueWorkshop\bin\Debug\netcoreapp3.1\StackQueueWorkshop.dll
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\01. Workshop Stack and Queue\Template\StackQueueWorkshop\bin\Debug\netcoreapp3.1\StackQueueWorkshop.pdb
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\01. Workshop Stack and Queue\Template\StackQueueWorkshop\obj\Debug\netcoreapp3.1\StackQueueWorkshop.csprojAssemblyReference.cache
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\01. Workshop Stack and Queue\Template\StackQueueWorkshop\obj\Debug\netcoreapp3.1\StackQueueWorkshop.AssemblyInfoInputs.cache
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\01. Workshop Stack and Queue\Template\StackQueueWorkshop\obj\Debug\netcoreapp3.1\StackQueueWorkshop.AssemblyInfo.cs
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\01. Workshop Stack and Queue\Template\StackQueueWorkshop\obj\Debug\netcoreapp3.1\StackQueueWorkshop.csproj.CoreCompileInputs.cache
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\01. Workshop Stack and Queue\Template\StackQueueWorkshop\obj\Debug\netcoreapp3.1\StackQueueWorkshop.dll
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\01. Workshop Stack and Queue\Template\StackQueueWorkshop\obj\Debug\netcoreapp3.1\StackQueueWorkshop.pdb
+C:\Users\Bambi\Desktop\Telerik\telerik-projects\03. DSA\01. Workshop Stack and Queue\Template\StackQueueWorkshop\obj\Debug\netcoreapp3.1\StackQueueWorkshop.genruntimeconfig.cache
