@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace HashTables.InClassActivity
@@ -7,7 +8,6 @@ namespace HashTables.InClassActivity
     {
         static void Main(string[] args)
         {
-            
         }
     }
 }
