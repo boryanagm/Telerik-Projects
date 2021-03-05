@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeSetMapHash", "PracticeSetMapHash\PracticeSetMapHash.csproj", "{566BB4DE-0579-4462-991E-3672C5675D84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Noah's Ark", "PracticeSetMapHash\01. Noah's Ark.csproj", "{566BB4DE-0579-4462-991E-3672C5675D84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Inventory Manager", "02. Inventory Manager\02. Inventory Manager.csproj", "{0E903563-BFE4-4C20-B801-945893FEDFE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{566BB4DE-0579-4462-991E-3672C5675D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{566BB4DE-0579-4462-991E-3672C5675D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{566BB4DE-0579-4462-991E-3672C5675D84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E903563-BFE4-4C20-B801-945893FEDFE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E903563-BFE4-4C20-B801-945893FEDFE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E903563-BFE4-4C20-B801-945893FEDFE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E903563-BFE4-4C20-B801-945893FEDFE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
