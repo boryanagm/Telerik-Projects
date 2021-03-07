@@ -50,7 +50,31 @@ class Program
 
                     if (filterBy == "price")
                     {
+                        double price1 = double.Parse(command[4]);
 
+                        if (command[3] == "from" && command.Length == 5)
+                        {
+                            foreach (var kvp in namePricePair.Where(x => x.Value >= price1).OrderBy(x => x.Value).ThenBy(x => x.Key))
+                            {
+                                ordered.Add($"{kvp.Key}({kvp.Value})");
+                            }
+                        }
+                        else if (command[3] == "to")
+                        {
+                            foreach (var kvp in namePricePair.Where(x => x.Value <= price1).OrderBy(x => x.Value).ThenBy(x => x.Key))
+                            {
+                                ordered.Add($"{kvp.Key}({kvp.Value})");
+                            }
+                        }
+                        else if (command.Length == 7)
+                        {
+                            double price2 = double.Parse(command[6]);
+
+                            foreach (var kvp in namePricePair.Where(x => x.Value >= price1 && x.Value <= price2).OrderBy(x => x.Value).ThenBy(x => x.Key))
+                            {
+                                ordered.Add($"{kvp.Key}({kvp.Value})");
+                            }
+                        }
                     }
                     else if (filterBy == "type")
                     {
@@ -63,18 +87,15 @@ class Program
                         }
                         else
                         {
-                            for (int i = 0; i < typeNamePair[currentType].Count; i++)
+                            foreach (var kvp in namePricePair.OrderBy(x => x.Value).ThenBy(x => x.Key))
                             {
-                                namePricePair = namePricePair.OrderBy(x => x.Value).ThenBy(x => x.Key).ToDictionary(x => x.Key, x => x.Value); // Order by price
-
-                                foreach (var kvp in namePricePair)
+                                for (int i = 0; i < typeNamePair[currentType].Count; i++)
                                 {
                                     if (kvp.Key == typeNamePair[currentType][i])
                                     {
                                         ordered.Add($"{kvp.Key}({kvp.Value})");
                                         break;
                                     }
-
                                 }
                             }
                         }

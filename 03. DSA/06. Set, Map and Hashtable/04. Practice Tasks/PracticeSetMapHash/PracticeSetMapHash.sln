@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Noah's Ark", "PracticeSetMapHash\01. Noah's Ark.csproj", "{566BB4DE-0579-4462-991E-3672C5675D84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Noah's Ark", "PracticeSetMapHash\01. Noah's Ark.csproj", "{566BB4DE-0579-4462-991E-3672C5675D84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Inventory Manager", "02. Inventory Manager\02. Inventory Manager.csproj", "{0E903563-BFE4-4C20-B801-945893FEDFE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Inventory Manager", "02. Inventory Manager\02. Inventory Manager.csproj", "{0E903563-BFE4-4C20-B801-945893FEDFE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Inventory Manager V2", "02. Inventory Manager V2\02. Inventory Manager V2.csproj", "{7DF6F6A8-72E4-4EFA-A8FE-3AA345CD74AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Inventory Manager V3", "02. Inventory Manager V3\02. Inventory Manager V3.csproj", "{55459E1C-A060-4FFC-8DE4-6F6C2385B9D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Inventory Manager FINAL", "02. Inventory Manager V4\02. Inventory Manager FINAL.csproj", "{5710EC1E-64C5-4FA6-A7FB-1429FE56A0FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Inventory Manager Maggi", "Simple Program1\02. Inventory Manager Maggi.csproj", "{1A7827A0-9B2D-47B7-91AF-09E6B3F4D2E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +27,18 @@ Global
 		{0E903563-BFE4-4C20-B801-945893FEDFE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E903563-BFE4-4C20-B801-945893FEDFE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E903563-BFE4-4C20-B801-945893FEDFE0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7DF6F6A8-72E4-4EFA-A8FE-3AA345CD74AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7DF6F6A8-72E4-4EFA-A8FE-3AA345CD74AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7DF6F6A8-72E4-4EFA-A8FE-3AA345CD74AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7DF6F6A8-72E4-4EFA-A8FE-3AA345CD74AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55459E1C-A060-4FFC-8DE4-6F6C2385B9D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55459E1C-A060-4FFC-8DE4-6F6C2385B9D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55459E1C-A060-4FFC-8DE4-6F6C2385B9D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55459E1C-A060-4FFC-8DE4-6F6C2385B9D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5710EC1E-64C5-4FA6-A7FB-1429FE56A0FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5710EC1E-64C5-4FA6-A7FB-1429FE56A0FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5710EC1E-64C5-4FA6-A7FB-1429FE56A0FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5710EC1E-64C5-4FA6-A7FB-1429FE56A0FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A7827A0-9B2D-47B7-91AF-09E6B3F4D2E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A7827A0-9B2D-47B7-91AF-09E6B3F4D2E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A7827A0-9B2D-47B7-91AF-09E6B3F4D2E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A7827A0-9B2D-47B7-91AF-09E6B3F4D2E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
