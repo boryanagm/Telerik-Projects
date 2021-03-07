@@ -5,6 +5,14 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindSum", "RecursionExercise\FindSum.csproj", "{F4ABE3DD-17BE-4F65-8448-BB6B003B6145}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find Shortest Pattern In A Grid", "Find Shortest Pattern In A Grid\Find Shortest Pattern In A Grid.csproj", "{C819FE12-BAC8-4490-92B8-AC061DCDFF72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial", "Longest Increasing Subsequence\Factorial.csproj", "{CCEF5DB2-207F-460E-A472-BEE7597E899A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generate all n-bit vectors", "Generate all n-bit vectors\Generate all n-bit vectors.csproj", "{1D204CD6-E91C-47BF-BFEA-E2E122E143F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generate all n-bit vectors V2", "Generate all n-bit vectors V2\Generate all n-bit vectors V2.csproj", "{AE0BA6DD-11DE-4370-803F-117C50D5D7CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{F4ABE3DD-17BE-4F65-8448-BB6B003B6145}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4ABE3DD-17BE-4F65-8448-BB6B003B6145}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4ABE3DD-17BE-4F65-8448-BB6B003B6145}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C819FE12-BAC8-4490-92B8-AC061DCDFF72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C819FE12-BAC8-4490-92B8-AC061DCDFF72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C819FE12-BAC8-4490-92B8-AC061DCDFF72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C819FE12-BAC8-4490-92B8-AC061DCDFF72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCEF5DB2-207F-460E-A472-BEE7597E899A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCEF5DB2-207F-460E-A472-BEE7597E899A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCEF5DB2-207F-460E-A472-BEE7597E899A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCEF5DB2-207F-460E-A472-BEE7597E899A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D204CD6-E91C-47BF-BFEA-E2E122E143F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D204CD6-E91C-47BF-BFEA-E2E122E143F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D204CD6-E91C-47BF-BFEA-E2E122E143F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D204CD6-E91C-47BF-BFEA-E2E122E143F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE0BA6DD-11DE-4370-803F-117C50D5D7CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE0BA6DD-11DE-4370-803F-117C50D5D7CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE0BA6DD-11DE-4370-803F-117C50D5D7CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE0BA6DD-11DE-4370-803F-117C50D5D7CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

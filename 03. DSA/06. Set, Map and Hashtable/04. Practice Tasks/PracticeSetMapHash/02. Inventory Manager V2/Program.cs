@@ -44,38 +44,42 @@ class Program
                     {
                         if (command[3] == "from" && command.Length == 5)
                         {
-                            if ((ProductManager.GetProductsAboveMinPrice(float.Parse(command[4]))).Count > 0)
-                            {
-                                ProductManager.PrintItems(ProductManager.GetProductsAboveMinPrice(float.Parse(command[4])));
-                            }
-                            else
-                            {
-                                Console.WriteLine("Ok:");
-                            }
+
+                            ProductManager.PrintItems(ProductManager.GetProductsAboveMinPrice(float.Parse(command[4])));
+                            //if ((ProductManager.GetProductsAboveMinPrice(float.Parse(command[4]))).Count > 0)
+                            //{
+                            //    ProductManager.PrintItems(ProductManager.GetProductsAboveMinPrice(float.Parse(command[4])));
+                            //}
+                            //else
+                            //{
+                            //    Console.WriteLine("Ok: ");
+                            //}
                         }
                         else if (command[3] == "to")
                         {
+                            ProductManager.PrintItems(ProductManager.GetProductsUnderMaxPrice(float.Parse(command[4])));
 
-                            if ((ProductManager.GetProductsUnderMaxPrice(float.Parse(command[4]))).Count > 0)
-                            {
-                                ProductManager.PrintItems(ProductManager.GetProductsUnderMaxPrice(float.Parse(command[4])));
-                            }
-                            else
-                            {
-                                Console.WriteLine("Ok:");
-                            }
+                            //if ((ProductManager.GetProductsUnderMaxPrice(float.Parse(command[4]))).Count > 0)
+                            //{
+                            //    ProductManager.PrintItems(ProductManager.GetProductsUnderMaxPrice(float.Parse(command[4])));
+                            //}
+                            //else
+                            //{
+                            //    Console.WriteLine("Ok: ");
+                            //}
                         }
                         else if (command.Length == 7)
                         {
+                            ProductManager.PrintItems(ProductManager.GetProductsBetweenPrices(float.Parse(command[4]), float.Parse(command[6])));
 
-                            if ((ProductManager.GetProductsBetweenPrices(float.Parse(command[4]), float.Parse(command[6]))).Count > 0)
-                            {
-                                ProductManager.PrintItems(ProductManager.GetProductsBetweenPrices(float.Parse(command[4]), float.Parse(command[6])));
-                            }
-                            else
-                            {
-                                Console.WriteLine("Ok:");
-                            }
+                            //if ((ProductManager.GetProductsBetweenPrices(float.Parse(command[4]), float.Parse(command[6]))).Count > 0)
+                            //{
+                            //    ProductManager.PrintItems(ProductManager.GetProductsBetweenPrices(float.Parse(command[4]), float.Parse(command[6])));
+                            //}
+                            //else
+                            //{
+                            //    Console.WriteLine("Ok: ");
+                            //}
                         }
                     }
                     else if (filterBy == "type")
@@ -128,42 +132,48 @@ public class ProductManager
         Products.Add(new Product(name, price, type));
     }
 
-    public static List<Product> GetProductsByType(string type)
+    public static List<string> GetProductsByType(string type)
     {
-        return Products.Where(x => x.Type == type).OrderBy(x => x.Price).Take(10).ToList();
+        return Products.Where(x => x.Type == type).OrderBy(x => x.Price).ThenBy(x => x.Name).Select(x => $"{x.Name}({x.Price})").Take(10).ToList();
     }
 
-    public static List<Product> GetProductsUnderMaxPrice(float price)
+    public static List<string> GetProductsUnderMaxPrice(float price)
     {
-        return Products.Where(x => x.Price <= price).OrderBy(x => x.Price).ThenBy(x => x.Name).ThenBy(x => x.Type).Take(10).ToList();
+        return Products.Where(x => x.Price <= price).OrderBy(x => x.Price).ThenBy(x => x.Name).ThenBy(x => x.Type).Select(x => $"{x.Name}({x.Price})").Take(10).ToList();
     }
 
-    public static List<Product> GetProductsAboveMinPrice(float price)
+    public static List<string> GetProductsAboveMinPrice(float price)
     {
-        return Products.Where(x => x.Price >= price).OrderBy(x => x.Price).ThenBy(x => x.Name).ThenBy(x => x.Type).Take(10).ToList();
+        return Products.Where(x => x.Price >= price).OrderBy(x => x.Price).ThenBy(x => x.Name).ThenBy(x => x.Type).Select(x => $"{x.Name}({x.Price})").Take(10).ToList();
     }
 
-    public static List<Product> GetProductsBetweenPrices(float price1, float price2)
+    public static List<string> GetProductsBetweenPrices(float price1, float price2)
     {
-        return Products.Where(x => x.Price >= price1 && x.Price <= price2).OrderBy(x => x.Price).ThenBy(x => x.Type).ThenBy(x => x.Name).Take(10).ToList();
+        return Products.Where(x => x.Price >= price1 && x.Price <= price2).OrderBy(x => x.Price).ThenBy(x => x.Name).ThenBy(x => x.Type).Select(x => $"{x.Name}({x.Price})").Take(10).ToList();
     }
 
-    public static void PrintItems(List<Product> ordered)
+    public static void PrintItems(List<string> ordered)
     {
-        StringBuilder sb = new StringBuilder();
-        sb.Append("Ok: ");
+        Console.WriteLine("Ok: " + string.Join(", ", ordered));
 
-        string separator = ", ";
+        //StringBuilder sb = new StringBuilder();
+        //sb.Append("Ok: ");
 
-        if (ordered != null)
-        {
-            foreach (var item in ordered)
-            {
-                sb.Append($"{item.Name}({item.Price})");
-                sb.Append(separator);
-            }
-        }
+        //string separator = ", ";
 
-        Console.WriteLine(string.Join(", ", sb.ToString().TrimEnd(',', ' ')));
+        //foreach (var item in ordered)
+        //{
+        //    sb.Append($"{item.Name}({item.Price})");
+        //    sb.Append(separator);
+        //}
+
+        //if (sb.Length < 5)
+        //{
+        //    Console.WriteLine(sb.ToString());
+        //}
+        //else
+        //{
+        //    Console.WriteLine(sb.ToString().TrimEnd(',', ' '));
+        //}
     }
 }
