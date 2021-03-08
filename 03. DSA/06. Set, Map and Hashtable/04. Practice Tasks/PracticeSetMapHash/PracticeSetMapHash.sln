@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Noah's Ark", "PracticeS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Inventory Manager", "02. Inventory Manager\02. Inventory Manager.csproj", "{0E903563-BFE4-4C20-B801-945893FEDFE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Inventory Manager V3", "02. Inventory Manager V3\02. Inventory Manager V3.csproj", "{55459E1C-A060-4FFC-8DE4-6F6C2385B9D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Inventory Manager V3", "02. Inventory Manager V3\02. Inventory Manager V3.csproj", "{55459E1C-A060-4FFC-8DE4-6F6C2385B9D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Inventory Manager FINAL", "02. Inventory Manager V4\02. Inventory Manager FINAL.csproj", "{5710EC1E-64C5-4FA6-A7FB-1429FE56A0FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Inventory Manager FINAL", "02. Inventory Manager V4\02. Inventory Manager FINAL.csproj", "{5710EC1E-64C5-4FA6-A7FB-1429FE56A0FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Inventory Manager Maggi", "Simple Program1\02. Inventory Manager Maggi.csproj", "{1A7827A0-9B2D-47B7-91AF-09E6B3F4D2E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Inventory Manager Maggi", "Simple Program1\02. Inventory Manager Maggi.csproj", "{1A7827A0-9B2D-47B7-91AF-09E6B3F4D2E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple Program2", "Simple Program2\Simple Program2.csproj", "{B8BEC2B0-B410-4BBA-B771-4AE8C08360DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{1A7827A0-9B2D-47B7-91AF-09E6B3F4D2E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A7827A0-9B2D-47B7-91AF-09E6B3F4D2E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A7827A0-9B2D-47B7-91AF-09E6B3F4D2E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8BEC2B0-B410-4BBA-B771-4AE8C08360DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8BEC2B0-B410-4BBA-B771-4AE8C08360DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8BEC2B0-B410-4BBA-B771-4AE8C08360DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8BEC2B0-B410-4BBA-B771-4AE8C08360DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
