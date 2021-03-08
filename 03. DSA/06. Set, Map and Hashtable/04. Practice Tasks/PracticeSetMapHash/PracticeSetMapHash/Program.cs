@@ -21,20 +21,19 @@ class Program
             noahsArk[specie]++;
         }
 
-        string isEven = string.Empty;
+        string isEven = "Yes";
+        string isOdd = "No";
 
         foreach (var kvp in noahsArk)
         {
             if (kvp.Value % 2 == 0)
             {
-                isEven = "Yes";
+                Console.WriteLine($"{kvp.Key} {kvp.Value} {isEven}");
             }
             else
             {
-                isEven = "No";
+                Console.WriteLine($"{kvp.Key} {kvp.Value} {isOdd}");
             }
-
-            Console.WriteLine($"{kvp.Key} {kvp.Value} {isEven}");
         }
     }
 }
