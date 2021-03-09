@@ -7,7 +7,7 @@ class Program
 {
     static void Main()
     {
-        string input = string.Empty;
+        string input = string.Empty; 
         string result = string.Empty;
         var printResult = new StringBuilder();
 
@@ -103,12 +103,12 @@ public static class CommandManager
             counter++;
         }
 
-        if (orderedPokemons.Length > 0)
-        {
-            orderedPokemons = orderedPokemons.Remove(orderedPokemons.Length - 2, 2);
-        }
+        //if (orderedPokemons.Length > 0)
+        //{
+        //    orderedPokemons = orderedPokemons.Remove(orderedPokemons.Length - 2, 2);
+        //}
 
-        return orderedPokemons.ToString();
+        return orderedPokemons.ToString().TrimEnd(';', ' ');
     }
 }
 
