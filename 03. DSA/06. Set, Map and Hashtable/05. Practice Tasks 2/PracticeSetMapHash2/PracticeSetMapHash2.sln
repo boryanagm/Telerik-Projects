@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gotta catch 'em all", "Simp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simple Program2", "Simple Program2\Simple Program2.csproj", "{E266CE28-C9D4-4253-88F2-59BE24BC60A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigListTest", "BigListTest\BigListTest.csproj", "{00681F9E-A13C-4652-9026-DE5D3367E6CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gotta catch 'em all V2", "Gotta catch 'em all V2\Gotta catch 'em all V2.csproj", "{CCE4EDEC-5702-4FC7-B8C3-113AEF52E149}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{E266CE28-C9D4-4253-88F2-59BE24BC60A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E266CE28-C9D4-4253-88F2-59BE24BC60A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E266CE28-C9D4-4253-88F2-59BE24BC60A7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{00681F9E-A13C-4652-9026-DE5D3367E6CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{00681F9E-A13C-4652-9026-DE5D3367E6CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{00681F9E-A13C-4652-9026-DE5D3367E6CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{00681F9E-A13C-4652-9026-DE5D3367E6CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCE4EDEC-5702-4FC7-B8C3-113AEF52E149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCE4EDEC-5702-4FC7-B8C3-113AEF52E149}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCE4EDEC-5702-4FC7-B8C3-113AEF52E149}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCE4EDEC-5702-4FC7-B8C3-113AEF52E149}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
