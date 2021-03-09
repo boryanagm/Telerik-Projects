@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Just count", "PracticeSetMapHash2\Just count.csproj", "{919DCA39-1CF2-40CC-9AE1-FF5F68FE6A67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple Program1", "Simple Program1\Simple Program1.csproj", "{D65B156F-07C4-4504-8A09-563010E4BDE5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gotta catch 'em all", "Simple Program1\Gotta catch 'em all.csproj", "{D65B156F-07C4-4504-8A09-563010E4BDE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple Program2", "Simple Program2\Simple Program2.csproj", "{E266CE28-C9D4-4253-88F2-59BE24BC60A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D65B156F-07C4-4504-8A09-563010E4BDE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D65B156F-07C4-4504-8A09-563010E4BDE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D65B156F-07C4-4504-8A09-563010E4BDE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E266CE28-C9D4-4253-88F2-59BE24BC60A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E266CE28-C9D4-4253-88F2-59BE24BC60A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E266CE28-C9D4-4253-88F2-59BE24BC60A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E266CE28-C9D4-4253-88F2-59BE24BC60A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
