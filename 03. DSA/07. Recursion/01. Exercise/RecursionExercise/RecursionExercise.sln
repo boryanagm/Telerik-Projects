@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindSum", "RecursionExercise\FindSum.csproj", "{F4ABE3DD-17BE-4F65-8448-BB6B003B6145}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindSum", "RecursionExercise\FindSum.csproj", "{F4ABE3DD-17BE-4F65-8448-BB6B003B6145}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find Shortest Pattern In A Grid", "Find Shortest Pattern In A Grid\Find Shortest Pattern In A Grid.csproj", "{C819FE12-BAC8-4490-92B8-AC061DCDFF72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Find Shortest Pattern In A Grid", "Find Shortest Pattern In A Grid\Find Shortest Pattern In A Grid.csproj", "{C819FE12-BAC8-4490-92B8-AC061DCDFF72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial", "Longest Increasing Subsequence\Factorial.csproj", "{CCEF5DB2-207F-460E-A472-BEE7597E899A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factorial", "Longest Increasing Subsequence\Factorial.csproj", "{CCEF5DB2-207F-460E-A472-BEE7597E899A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generate all n-bit vectors", "Generate all n-bit vectors\Generate all n-bit vectors.csproj", "{1D204CD6-E91C-47BF-BFEA-E2E122E143F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generate all n-bit vectors", "Generate all n-bit vectors\Generate all n-bit vectors.csproj", "{1D204CD6-E91C-47BF-BFEA-E2E122E143F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generate all n-bit vectors V2", "Generate all n-bit vectors V2\Generate all n-bit vectors V2.csproj", "{AE0BA6DD-11DE-4370-803F-117C50D5D7CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generate all n-bit vectors V2", "Generate all n-bit vectors V2\Generate all n-bit vectors V2.csproj", "{AE0BA6DD-11DE-4370-803F-117C50D5D7CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "N Queen Problem\Fibonacci.csproj", "{82FD858F-4ED0-4CB8-BE7A-F2F47490D2E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{AE0BA6DD-11DE-4370-803F-117C50D5D7CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE0BA6DD-11DE-4370-803F-117C50D5D7CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE0BA6DD-11DE-4370-803F-117C50D5D7CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82FD858F-4ED0-4CB8-BE7A-F2F47490D2E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82FD858F-4ED0-4CB8-BE7A-F2F47490D2E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82FD858F-4ED0-4CB8-BE7A-F2F47490D2E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82FD858F-4ED0-4CB8-BE7A-F2F47490D2E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
