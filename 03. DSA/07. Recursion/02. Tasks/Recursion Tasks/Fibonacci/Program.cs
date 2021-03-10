@@ -3,19 +3,21 @@ using System.Numerics;
 
 class Program
 {
+    public static BigInteger[] memo = new BigInteger[100000];
+
     static void Main()
     {
-        var memo = new BigInteger[100]; // The max length of the array would be the max Fibonacci number
-        Console.WriteLine(Fibonacci(7, memo));
+        int n = int.Parse(Console.ReadLine());
+
+        Console.WriteLine(CalculateFibonacci(n));
     }
 
-    static BigInteger Fibonacci(int n, BigInteger[] memo)
+    static BigInteger CalculateFibonacci(int n)
     {
         if (n == 0)
         {
             return 0;
         }
-
         if ((n == 1) || (n == 2))
         {
             return 1;
@@ -24,7 +26,7 @@ class Program
         {
             if (memo[n] == 0)
             {
-                memo[n] = Fibonacci(n - 1, memo) + Fibonacci(n - 2, memo);
+                memo[n] = CalculateFibonacci(n - 1) + CalculateFibonacci(n - 2);
 
             }
             return memo[n];
