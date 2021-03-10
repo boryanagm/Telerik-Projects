@@ -20,6 +20,7 @@ class Program
             return 0;
         }
 
+
         return CountSevens(n % 10) + CountSevens(n / 10);
     }
 }
