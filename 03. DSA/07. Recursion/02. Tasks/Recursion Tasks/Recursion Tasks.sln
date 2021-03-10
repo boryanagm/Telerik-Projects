@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Count occurrences 2", "Coun
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Power N", "Power N\Power N.csproj", "{3EAB896B-FB9C-4B59-BC83-3B96BA71950E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Count X", "Count X\Count X.csproj", "{BC786D0D-95BE-4BAD-BF5E-A17186FFE80E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Count Hi", "Count Hi\Count Hi.csproj", "{C348E708-8133-490B-B65E-0D79074C44C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{3EAB896B-FB9C-4B59-BC83-3B96BA71950E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EAB896B-FB9C-4B59-BC83-3B96BA71950E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EAB896B-FB9C-4B59-BC83-3B96BA71950E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC786D0D-95BE-4BAD-BF5E-A17186FFE80E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC786D0D-95BE-4BAD-BF5E-A17186FFE80E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC786D0D-95BE-4BAD-BF5E-A17186FFE80E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC786D0D-95BE-4BAD-BF5E-A17186FFE80E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C348E708-8133-490B-B65E-0D79074C44C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C348E708-8133-490B-B65E-0D79074C44C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C348E708-8133-490B-B65E-0D79074C44C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C348E708-8133-490B-B65E-0D79074C44C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
