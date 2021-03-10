@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Change Pi", "Change Pi\Chan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array with 6", "Array with 6\Array with 6.csproj", "{409D207F-D80D-4B21-83B8-C117362A2BBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays containing 11", "Arrays containing 11\Arrays containing 11.csproj", "{D9F26797-B0B8-48EB-971D-8809B7178E62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{409D207F-D80D-4B21-83B8-C117362A2BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{409D207F-D80D-4B21-83B8-C117362A2BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{409D207F-D80D-4B21-83B8-C117362A2BBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9F26797-B0B8-48EB-971D-8809B7178E62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9F26797-B0B8-48EB-971D-8809B7178E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9F26797-B0B8-48EB-971D-8809B7178E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9F26797-B0B8-48EB-971D-8809B7178E62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
