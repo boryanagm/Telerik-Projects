@@ -77,7 +77,7 @@ namespace AlgorithmAnalysis
 			return sum;
 		}
 
-		// Complexity O(n^2)
+		// Complexity O(nm)
 		static int SumNM(int n, int m)
 		{
 			int sum = 0;
