@@ -30,6 +30,27 @@ namespace LinearDataStructures.Extensions
             }
 
             return true;
+
+            /*
+            Telerik Solution:
+
+            var a = list1.Head;
+			var b = list2.Head;
+
+			while (a != null && b != null)
+			{
+				if (!a.Value.Equals(b.Value))
+				{
+					return false;
+				}
+
+				a = a.Next;
+				b = b.Next;
+			}
+
+			return (a == null) && (b == null);
+
+             */
         }
 
         public static Node<T> FindMiddleNode<T>(SinglyLinkedList<T> list)
@@ -44,6 +65,22 @@ namespace LinearDataStructures.Extensions
             }
 
             return a;
+
+            /*
+             Telerik Solution:
+
+            Node<T> slowPointer = list.Head; // Turtle
+			Node<T> fastPointer = list.Head; // Rabbit
+
+			while (fastPointer != null && fastPointer.Next != null)
+			{
+				slowPointer = slowPointer.Next;
+				fastPointer = fastPointer.Next.Next;
+			}
+
+			return slowPointer;
+
+             */
         }
 
         public static SinglyLinkedList<T> MergeLists<T>(SinglyLinkedList<T> list1, SinglyLinkedList<T> list2) where T : IComparable
@@ -91,6 +128,39 @@ namespace LinearDataStructures.Extensions
             SinglyLinkedList<T> mergedList = ReverseList<T>(result);
 
             return mergedList;
+
+            /*
+             Telerik Solution:
+
+            var mergedList = new SinglyLinkedList<T>(new T[] { default });
+
+			var current = mergedList.Head;
+
+			var h1 = list1.Head;
+			var h2 = list2.Head;
+
+			while (h1 != null && h2 != null)
+			{
+				if (h1.Value.CompareTo(h2.Value) == -1)
+				{
+					current.Next = new Node<T>(h1.Value);
+					h1 = h1.Next;
+				}
+				else
+				{
+					current.Next = new Node<T>(h2.Value);
+					h2 = h2.Next;
+				}
+
+				current = current.Next;
+			}
+
+			current.Next = h1 ?? h2;
+
+			mergedList.RemoveFirst();
+			return mergedList;
+
+             */
         }
 
         public static SinglyLinkedList<T> ReverseList<T>(SinglyLinkedList<T> list)
@@ -106,6 +176,8 @@ namespace LinearDataStructures.Extensions
             }
 
             return reversedList;
+
+            // Telerik solution is the same.
         }
 
         public static bool AreValidParentheses(string expression)
@@ -153,6 +225,34 @@ namespace LinearDataStructures.Extensions
             }
 
             return false;
+
+            /*
+             Telerik Solution:
+
+            var tracker = new SinglyLinkedList<char>();
+
+			foreach (char current in expression)
+			{
+				if (current == '(')
+				{
+					tracker.AddFirst(current);
+				}
+				else if (current == ')')
+				{
+					if (tracker.Head == null)
+					{
+						return false;
+					}
+					else
+					{
+						tracker.RemoveFirst();
+					}
+				}
+			}
+
+			return tracker.Head == null;
+
+             */
         }
 
         public static string RemoveBackspaces(string sequence, char backspaceChar)
@@ -183,6 +283,35 @@ namespace LinearDataStructures.Extensions
             }
 
             return string.Join("", reversed);
+
+            /*
+             Telerik Solution:
+
+            var stack = new SinglyLinkedList<char>();
+
+			foreach (char ch in sequence)
+			{
+				if (ch == backspace && stack.Head != null)
+				{
+					stack.RemoveFirst();
+				}
+				else if (ch != backspace)
+				{
+					stack.AddFirst(ch);
+				}
+			}
+
+			var sb = new StringBuilder();
+			var current = stack.Head;
+			while (current != null)
+			{
+				sb.Insert(0, current.Value);
+				current = current.Next;
+			}
+
+			return sb.ToString();
+
+             */
         }
     }
 }
