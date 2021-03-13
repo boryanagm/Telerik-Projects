@@ -5,12 +5,12 @@ using System.Text.RegularExpressions;
 
 class Program
 {
-    public static List<List<int>> possibleDigitCombinations = new List<List<int>>();
-    public static List<List<int>> validCodes = new List<List<int>>();
+    public static List<List<string>> possibleDigitCombinations = new List<List<string>>();
+    public static SortedSet<string> validCodes = new SortedSet<string>();
 
     static void Main()
     {
-        Dictionary<int, string> digitLetter = new Dictionary<int, string>();
+        Dictionary<string, string> digitLetter = new Dictionary<string, string>();
 
         string digitMsg = Console.ReadLine();
         string cipherMsg = Console.ReadLine();
@@ -18,11 +18,11 @@ class Program
         string pattern = @"([0-9]+)";
         MatchCollection matches = Regex.Matches(cipherMsg, pattern);
 
-        List<int> digitCodes = new List<int>();
+        List<string> digitCodes = new List<string>();
 
         foreach (Match match in matches)
         {
-            digitCodes.Add(int.Parse(match.Value));
+            digitCodes.Add(match.Value);
         }
 
         string letterPattern = @"([A-Z]+)";
@@ -40,7 +40,7 @@ class Program
             digitLetter[digitCodes[i]] = letters[i];
         }
 
-        List<int> currentPart = new List<int>();
+        List<string> currentPart = new List<string>();
 
         FindDigitCombination(0, digitMsg.Length, digitMsg, currentPart);
 
@@ -52,24 +52,25 @@ class Program
 
         if (validCodes.Count > 0)
         {
-            for (int i = 0; i < validCodes.Count; i++)
-            {
-                StringBuilder sb = new StringBuilder();
+            StringBuilder sb = new StringBuilder();
 
-                for (int j = 0; j < validCodes[i].Count; j++)
+            foreach (var item in validCodes)
+            {
+                var itemAsArr = item.Split(' ');
+
+                for (int j = 0; j < itemAsArr.Length; j++)
                 {
-                    sb.Append(digitLetter[validCodes[i][j]]);
+                    sb.Append(digitLetter[itemAsArr[j]]);
                 }
                 printResult.Add(sb.ToString());
+                sb.Clear();
             }
+
             Console.WriteLine(string.Join(Environment.NewLine, printResult));
-
         }
-
-        // Console.WriteLine(string.Join(Environment.NewLine, printResult));
     }
 
-    static void FindValidCombinations(List<int> digitCodes)
+    static void FindValidCombinations(List<string> digitCodes)
     {
         for (int j = 0; j < possibleDigitCombinations.Count; j++)
         {
@@ -85,24 +86,24 @@ class Program
             }
             if (isValid == true)
             {
-                validCodes.Add(possibleDigitCombinations[j]);
+                validCodes.Add(string.Join(" ", possibleDigitCombinations[j]));
             }
         }
     }
 
 
-    static void FindDigitCombination(int start, int n, string digitMsg, List<int> currentPart)
+    static void FindDigitCombination(int start, int n, string digitMsg, List<string> currentPart)
     {
         if (start >= n)
         {
-            possibleDigitCombinations.Add(new List<int>(currentPart));
+            possibleDigitCombinations.Add(new List<string>(currentPart));
             return;
         }
 
         for (int i = start; i < n; i++)
         {
             // Add the substring to result
-            currentPart.Add(int.Parse(digitMsg.Substring(start, i + 1 - start)));
+            currentPart.Add(digitMsg.Substring(start, i + 1 - start));
 
             // Recur for remaining substring
             FindDigitCombination(i + 1, n, digitMsg, currentPart);
@@ -112,4 +113,5 @@ class Program
             currentPart.RemoveAt(currentPart.Count - 1);
         }
     }
+
 }

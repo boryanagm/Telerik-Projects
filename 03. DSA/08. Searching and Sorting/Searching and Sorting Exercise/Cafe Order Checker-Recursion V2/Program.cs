@@ -12,34 +12,25 @@ class Program
         Console.WriteLine(CheckOrders(takeOut, dineIn, served));
     }
 
-    // My implementation
+    // My implementation - Complexity: O(n) time and O(1) additional space.
     private static bool CheckOrders(int[] takeOut, int[] dineIn, int[] served)
     {
         int takeOutIndex = 0;
         int dineInIndex = 0;
-        int servedIndex = 0;
-
 
         for (int i = 0; i < served.Length; i++)
         {
-            if (takeOutIndex < takeOut.Length && served[servedIndex] == takeOut[takeOutIndex])
+            if (takeOutIndex < takeOut.Length && served[i] == takeOut[takeOutIndex])
             {
-                servedIndex++;
                 takeOutIndex++;
             }
-            else if (dineInIndex < dineIn.Length && served[servedIndex] == dineIn[dineInIndex])
+            else if (dineInIndex < dineIn.Length && served[i] == dineIn[dineInIndex])
             {
-                servedIndex++;
                 dineInIndex++;
             }
             else
             {
                 return false;
-            }
-
-            if (servedIndex == served.Length - 1)
-            {
-                break;
             }
         }
 

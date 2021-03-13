@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cafe Order Checker-Recursio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cafe Order Checker V2", "Cafe Order Checker-Recursion V2\Cafe Order Checker V2.csproj", "{484C605F-8265-48E6-8B50-4B3157049E58}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cafe Order Checker-Recursion 2", "Cafe Order Checker-Recursion 2\Cafe Order Checker-Recursion 2.csproj", "{CDB00244-BF1A-41D1-8AB3-3092B7C57422}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{484C605F-8265-48E6-8B50-4B3157049E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{484C605F-8265-48E6-8B50-4B3157049E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{484C605F-8265-48E6-8B50-4B3157049E58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDB00244-BF1A-41D1-8AB3-3092B7C57422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDB00244-BF1A-41D1-8AB3-3092B7C57422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDB00244-BF1A-41D1-8AB3-3092B7C57422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDB00244-BF1A-41D1-8AB3-3092B7C57422}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

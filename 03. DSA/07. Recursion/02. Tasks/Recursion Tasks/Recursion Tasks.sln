@@ -35,9 +35,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cipher 2", "Cipher 2\Cipher
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scrooge McDuck", "Scrooge McDuck\Scrooge McDuck.csproj", "{2E8E2D96-1CAF-4EB1-905C-434387A6140F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Largest Surface Telerik Solution", "Largest Surface Telerik Solution\Largest Surface Telerik Solution.csproj", "{C5D3EDD2-0AB9-4ACD-8891-B5AF2568F154}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Largest Surface Telerik Solution", "Largest Surface Telerik Solution\Largest Surface Telerik Solution.csproj", "{C5D3EDD2-0AB9-4ACD-8891-B5AF2568F154}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variations Telerik Solution", "Variations Telerik Solution\Variations Telerik Solution.csproj", "{348FAD6D-F70D-4CF0-8E8E-A7D6D60D1A68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Variations Telerik Solution", "Variations Telerik Solution\Variations Telerik Solution.csproj", "{348FAD6D-F70D-4CF0-8E8E-A7D6D60D1A68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cipher 3 Valid one", "Cipher 3\Cipher 3 Valid one.csproj", "{7F23897E-1212-4C22-B78D-C3BA1D1B9178}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{348FAD6D-F70D-4CF0-8E8E-A7D6D60D1A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{348FAD6D-F70D-4CF0-8E8E-A7D6D60D1A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{348FAD6D-F70D-4CF0-8E8E-A7D6D60D1A68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F23897E-1212-4C22-B78D-C3BA1D1B9178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F23897E-1212-4C22-B78D-C3BA1D1B9178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F23897E-1212-4C22-B78D-C3BA1D1B9178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F23897E-1212-4C22-B78D-C3BA1D1B9178}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
