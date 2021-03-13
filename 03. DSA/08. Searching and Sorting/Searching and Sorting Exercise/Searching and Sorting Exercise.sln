@@ -11,6 +11,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cafe Order Checker-Recursio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inflight Entertainment", "Inflight Entertainment\Inflight Entertainment.csproj", "{90E908CA-3A28-4DED-8FF1-59BF5859EDD1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inflight Entertainment - Telerik Solution", "Inflight Entertainment - Telerik Solution\Inflight Entertainment - Telerik Solution.csproj", "{EDAA5155-A40B-48DE-8A36-A3A49D6B5557}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linked List Cycles-Using HashSet", "Linked List Cycles\Linked List Cycles-Using HashSet.csproj", "{1BBFBDF0-6D73-43AA-A797-F267C59146DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linked List Cycles - Telerik Solution", "Linked List Cycles - Telerik Solution\Linked List Cycles - Telerik Solution.csproj", "{7D512D74-8D24-4389-9599-6FCA932EA6D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +39,18 @@ Global
 		{90E908CA-3A28-4DED-8FF1-59BF5859EDD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90E908CA-3A28-4DED-8FF1-59BF5859EDD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90E908CA-3A28-4DED-8FF1-59BF5859EDD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDAA5155-A40B-48DE-8A36-A3A49D6B5557}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDAA5155-A40B-48DE-8A36-A3A49D6B5557}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDAA5155-A40B-48DE-8A36-A3A49D6B5557}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDAA5155-A40B-48DE-8A36-A3A49D6B5557}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BBFBDF0-6D73-43AA-A797-F267C59146DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BBFBDF0-6D73-43AA-A797-F267C59146DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BBFBDF0-6D73-43AA-A797-F267C59146DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BBFBDF0-6D73-43AA-A797-F267C59146DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D512D74-8D24-4389-9599-6FCA932EA6D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D512D74-8D24-4389-9599-6FCA932EA6D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D512D74-8D24-4389-9599-6FCA932EA6D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D512D74-8D24-4389-9599-6FCA932EA6D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
