@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linked List Cycles-Using Ha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linked List Cycles - Telerik Solution", "Linked List Cycles - Telerik Solution\Linked List Cycles - Telerik Solution.csproj", "{7D512D74-8D24-4389-9599-6FCA932EA6D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopScores", "TopScores\TopScores.csproj", "{0FDCB87A-6CEA-4686-AA26-277B68A73A57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{7D512D74-8D24-4389-9599-6FCA932EA6D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D512D74-8D24-4389-9599-6FCA932EA6D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D512D74-8D24-4389-9599-6FCA932EA6D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FDCB87A-6CEA-4686-AA26-277B68A73A57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FDCB87A-6CEA-4686-AA26-277B68A73A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FDCB87A-6CEA-4686-AA26-277B68A73A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FDCB87A-6CEA-4686-AA26-277B68A73A57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
