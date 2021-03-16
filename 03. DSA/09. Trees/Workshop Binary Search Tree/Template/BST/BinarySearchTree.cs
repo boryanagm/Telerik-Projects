@@ -19,8 +19,31 @@ namespace BST
             this.left = null;
             this.right = null;
         }
+        private int GetTreeDepth(BinarySearchTree<T> parent)
+        {
+            int height = 0;
+            if (parent != null)
+            {
+                if (parent.left == null && parent.right == null)
+                {
+                    height = 0;
+                }
+                else
+                {
+                    height = Math.Max(GetTreeDepth(parent.left), GetTreeDepth(parent.right)) + 1;
+                }
+            }
+            else
+            {
+                height = 0;
+            }
+            return height;
+        }
 
-        public int Height { get; }
+        public int Height
+        {
+            get => GetTreeDepth(this);
+        }
         public IList<T> GetBFS()
         {
             var queue = new Queue<BinarySearchTree<T>>();
@@ -189,7 +212,5 @@ namespace BST
             }
             return maxValue(node.right);
         }
-
-
     }
 }
