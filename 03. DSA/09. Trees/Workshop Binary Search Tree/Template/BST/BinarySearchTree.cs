@@ -119,7 +119,7 @@ namespace BST
         {
             return this.value;
         }
-        public void Insert(T element)
+        public void Insert(T element) // if equal?
         {
             if (element.CompareTo(this.GetRootValue()) == -1)
             {
@@ -150,11 +150,11 @@ namespace BST
             {
                 return true;
             }
-            if (element.CompareTo(this.GetRootValue()) == -1 && this.left != null)
+            if (this.left != null && element.CompareTo(this.GetRootValue()) == -1)
             {
                 return this.left.Search(element);
             }
-            else if (element.CompareTo(this.GetRootValue()) == 1 && this.right != null)
+            else if (this.right != null && element.CompareTo(this.GetRootValue()) == 1)
             {
                 return this.right.Search(element);
             }
