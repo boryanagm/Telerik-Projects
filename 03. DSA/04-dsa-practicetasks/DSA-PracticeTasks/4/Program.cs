@@ -6,28 +6,26 @@ class Program
 {
     static void Main()
     {
-        int[] studentsSeatsPair = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+        int[] nums = Console.ReadLine().Split().Select(int.Parse).ToArray();
+        string[] inputNames = Console.ReadLine().Split();
 
-        int studentsCount = studentsSeatsPair[0];
-        int seatChangesCount = studentsSeatsPair[1];
-
-        string[] names = Console.ReadLine().Split(' ');
-
-        LinkedList<string> namesList = new LinkedList<string>(names);
-
-        for (int i = 0; i < seatChangesCount; i++)
+        var names = new Dictionary<string, LinkedListNode<string>>();
+        var linkedList = new LinkedList<string>();
+        foreach (var name in inputNames)
         {
-            string[] namePairs = Console.ReadLine().Split(' ');
-
-            string leftName = namePairs[0];
-            string rightName = namePairs[1];
-            
-            namesList.Remove(leftName);
-
-            namesList.AddBefore(namesList.Find(rightName), leftName);
+            names.Add(name, linkedList.AddLast(name));
         }
 
-        Console.WriteLine(string.Join(" ", namesList));
+        var seats = new string[2];
+        for (int i = 0; i < nums[1]; i++)
+        {
+            seats = Console.ReadLine().Split();
+            linkedList.Remove(names[seats[0]]);
+            linkedList.AddBefore(names[seats[1]], names[seats[0]]);
+            //linkedList.AddBefore(names.GetValueOrDefault(seats[1]), names.GetValueOrDefault(seats[0]));
+        }
+
+        Console.WriteLine(string.Join(" ", linkedList));
     }
 }
 

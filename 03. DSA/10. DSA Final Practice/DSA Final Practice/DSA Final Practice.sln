@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSA Final Practice", "DSA Final Practice\DSA Final Practice.csproj", "{4D812C6D-89D4-4F1B-91DD-953D7C11C503}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shuffle", "DSA Final Practice\Shuffle.csproj", "{4D812C6D-89D4-4F1B-91DD-953D7C11C503}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shuffle V2", "Shuffle V2\Shuffle V2.csproj", "{CEB963A7-9C1C-45F4-A2F8-C844FC76125B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4D812C6D-89D4-4F1B-91DD-953D7C11C503}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D812C6D-89D4-4F1B-91DD-953D7C11C503}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D812C6D-89D4-4F1B-91DD-953D7C11C503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEB963A7-9C1C-45F4-A2F8-C844FC76125B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEB963A7-9C1C-45F4-A2F8-C844FC76125B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEB963A7-9C1C-45F4-A2F8-C844FC76125B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEB963A7-9C1C-45F4-A2F8-C844FC76125B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

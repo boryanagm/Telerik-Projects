@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\4\\02. Students order V3.csproj",
-      "projectName": "02. Students order V3",
-      "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\4\\02. Students order V3.csproj",
+      "projectUniqueName": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\4\\02. Students order - Maggie.csproj",
+      "projectName": "02. Students order - Maggie",
+      "projectPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\4\\02. Students order - Maggie.csproj",
       "packagesPath": "C:\\Users\\Bambi\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Bambi\\Desktop\\Telerik\\telerik-projects\\03. DSA\\04-dsa-practicetasks\\DSA-PracticeTasks\\4\\obj\\",
       "projectStyle": "PackageReference",

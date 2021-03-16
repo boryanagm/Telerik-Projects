@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Students order", "02. S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Students order V2", "02. Students order V2\02. Students order V2.csproj", "{1F2907C4-042E-490E-8404-0E2D3C94F140}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Students order V3", "4\02. Students order V3.csproj", "{9F066047-6EFE-4F6C-A735-DD1D1360407E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Students order - Maggie", "4\02. Students order - Maggie.csproj", "{9F066047-6EFE-4F6C-A735-DD1D1360407E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03 HDNL Toy", "03 HDNL Toy\03 HDNL Toy.csproj", "{FF1695FF-EB2D-44D4-930C-BAFEE1B92B34}"
 EndProject
@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Jumps V3", "01. Jumps V
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Students order V5", "02. Students order V5\02. Students order V5.csproj", "{A0B5144E-5FCA-4760-98DE-1CCF7C346A9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Find middle node doubly linked", "04. Find middle node doubly linked\04. Find middle node doubly linked.csproj", "{E64ABB33-FEC7-4BE9-84D9-EAC0F195FB1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Find middle node doubly linked", "04. Find middle node doubly linked\04. Find middle node doubly linked.csproj", "{E64ABB33-FEC7-4BE9-84D9-EAC0F195FB1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
