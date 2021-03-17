@@ -93,7 +93,7 @@ class Program
             counter = 10;
         }
 
-        var currentSet = allPosts.Where(x => x.)
+     //   var currentSet = allPosts.Where(x => x.Key == userName || x.Key == )
 
         for (int i = counter - 1; i >= 0; i--)
         {
