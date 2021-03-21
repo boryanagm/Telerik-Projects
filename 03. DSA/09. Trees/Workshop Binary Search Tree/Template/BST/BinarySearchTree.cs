@@ -3,7 +3,299 @@ using System.Collections.Generic;
 
 namespace BST
 {
-    public class BinarySearchTree<T> : IBinarySearchTree<T> where T : IComparable<T>
+	// Telerik Solution:
+	public class BinarySearchTree<T> : IBinarySearchTree<T> where T : IComparable<T>
+	{
+		public BinarySearchTree(T value)
+		{
+			this.Value = value;
+		}
+
+		public T Value
+		{
+			get;
+			private set;
+		}
+
+		public BinarySearchTree<T> Left
+		{
+			get;
+			private set;
+		}
+
+		public BinarySearchTree<T> Right
+		{
+			get;
+			private set;
+		}
+
+		public int Height
+		{
+			get
+			{
+				int leftHeight = this.Left != null ? this.Left.Height + 1 : 0;
+				int rightHeight = this.Right != null ? this.Right.Height + 1 : 0;
+
+				return Math.Max(leftHeight, rightHeight);
+			}
+		}
+
+		public T GetRootValue() => this.Value;
+
+		public IBinarySearchTree<T> GetLeftTree() => this.Left;
+
+		public IBinarySearchTree<T> GetRightTree() => this.Right;
+
+		public IList<T> GetBFS()
+		{
+			var output = new List<T>();
+
+			this.GetBFS(this, output);
+
+			return output;
+		}
+
+		private void GetBFS(BinarySearchTree<T> root, List<T> output)
+		{
+			if (root == null)
+			{
+				return;
+			}
+
+			var queue = new Queue<BinarySearchTree<T>>();
+
+			queue.Enqueue(root);
+
+			while (queue.Count > 0)
+			{
+				var node = queue.Dequeue();
+
+				output.Add(node.Value);
+
+				if (node.Left != null)
+				{
+					queue.Enqueue(node.Left);
+				}
+
+				if (node.Right != null)
+				{
+					queue.Enqueue(node.Right);
+				}
+			}
+		}
+
+		public IList<T> GetPreOrder()
+		{
+			var result = new List<T>();
+
+			this.GetPreOrder(this, result);
+
+			return result;
+		}
+
+		private void GetPreOrder(BinarySearchTree<T> root, List<T> output)
+		{
+			if (root == null)
+			{
+				return;
+			}
+
+			// visit
+			output.Add(root.Value);
+
+			this.GetPreOrder(root.Left, output);
+			this.GetPreOrder(root.Right, output);
+		}
+
+		public IList<T> GetInOrder()
+		{
+			var output = new List<T>();
+
+			this.GetInOrder(this, output);
+
+			return output;
+		}
+
+		private void GetInOrder(BinarySearchTree<T> root, List<T> result)
+		{
+			if (root == null)
+			{
+				return;
+			}
+
+			this.GetInOrder(root.Left, result);
+
+			// visit
+			result.Add(root.Value);
+
+			this.GetInOrder(root.Right, result);
+		}
+
+		public IList<T> GetPostOrder()
+		{
+			var output = new List<T>();
+
+			this.GetPostOrder(this, output);
+
+			return output;
+		}
+
+		private void GetPostOrder(BinarySearchTree<T> root, List<T> result)
+		{
+			if (root == null)
+			{
+				return;
+			}
+
+			this.GetPostOrder(root.Left, result);
+			this.GetPostOrder(root.Right, result);
+
+			// visit
+			result.Add(root.Value);
+		}
+
+		public void Insert(T newValue)
+		{
+			if (this.Value.CompareTo(newValue) == 0)
+			{
+				throw new ArgumentException($"{newValue} already exists");
+			}
+
+			if (this.Value.CompareTo(newValue) > 0)
+			{
+				if (this.Left == null)
+				{
+					this.Left = new BinarySearchTree<T>(newValue);
+				}
+				else
+				{
+					this.Left.Insert(newValue);
+				}
+			}
+
+
+			if (this.Value.CompareTo(newValue) < 0)
+			{
+				if (this.Right == null)
+				{
+					this.Right = new BinarySearchTree<T>(newValue);
+				}
+				else
+				{
+					this.Right.Insert(newValue);
+				}
+			}
+		}
+
+		public bool Search(T value)
+		{
+			if (this.Value.CompareTo(value) == 0)
+			{
+				return true;
+			}
+
+			if (this.Left != null && this.Value.CompareTo(value) > 0)
+			{
+				return this.Left.Search(value);
+			}
+
+			if (this.Right != null && this.Value.CompareTo(value) < 0)
+			{
+				return this.Right.Search(value);
+			}
+
+			return false;
+		}
+
+		// Advanced task!
+		public bool Remove(T value)
+		{
+			if (this.Value.CompareTo(value) == 0)
+			{
+				BinarySearchTree<T> leafToRemove;
+
+				if (this.Left != null)
+				{
+					leafToRemove = this.Left.GetMaxValueNode();
+				}
+				else
+				{
+					leafToRemove = this.Right.GetMinValueNode();
+				}
+
+				this.Value = leafToRemove.Value;
+				return this.RemoveLeaf(leafToRemove);
+			}
+			else if (this.Left != null && this.Value.CompareTo(value) > 0)
+			{
+				return this.Left.Remove(value);
+			}
+			else if (this.Right != null)
+			{
+				return this.Right.Remove(value);
+			}
+			else
+			{
+				return false;
+			}
+		}
+
+		private bool RemoveLeaf(BinarySearchTree<T> leaf)
+		{
+			if (this.Left == leaf)
+			{
+				this.Left = null;
+				return true;
+			}
+			else if (this.Right == leaf)
+			{
+				this.Right = null;
+				return true;
+			}
+			else if (this.Left != null)
+			{
+				return this.Left.RemoveLeaf(leaf);
+			}
+			else if (this.Right != null)
+			{
+				return this.Right.RemoveLeaf(leaf);
+			}
+			else
+			{
+				return false;
+			}
+		}
+
+		private BinarySearchTree<T> GetMinValueNode()
+		{
+			if (this.Left == null)
+			{
+				return this;
+			}
+
+			return this.Left.GetMinValueNode();
+		}
+
+		private BinarySearchTree<T> GetMaxValueNode()
+		{
+			if (this.Right == null)
+			{
+				return this;
+			}
+
+			return this.Right.GetMaxValueNode();
+		}
+
+		public override string ToString()
+		{
+			return this.Value.ToString();
+		}
+	}
+
+
+
+	// Buddy Group Solution:
+	/*public class BinarySearchTree<T> : IBinarySearchTree<T> where T : IComparable<T>
     {
         private T value;
         private BinarySearchTree<T> left;
@@ -212,5 +504,5 @@ namespace BST
             }
             return maxValue(node.right);
         }
-    }
+    }*/
 }
