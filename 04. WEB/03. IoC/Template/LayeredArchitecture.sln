@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayeredArchitecture", "LayeredArchitecture\LayeredArchitecture.csproj", "{5C1FE937-9C33-4DEF-B523-0060F9A09E3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LayeredArchitecture.Web", "LayeredArchitecture\LayeredArchitecture.Web.csproj", "{5C1FE937-9C33-4DEF-B523-0060F9A09E3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayeredArchitecture.Data", "Data\LayeredArchitecture.Data.csproj", "{BC540EEF-609C-4DDC-9825-A4E67B220AC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayeredArchitecture.Services", "Services\LayeredArchitecture.Services.csproj", "{0105A044-A42E-4E2F-8B65-61940999E7E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{5C1FE937-9C33-4DEF-B523-0060F9A09E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C1FE937-9C33-4DEF-B523-0060F9A09E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C1FE937-9C33-4DEF-B523-0060F9A09E3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC540EEF-609C-4DDC-9825-A4E67B220AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC540EEF-609C-4DDC-9825-A4E67B220AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC540EEF-609C-4DDC-9825-A4E67B220AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC540EEF-609C-4DDC-9825-A4E67B220AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0105A044-A42E-4E2F-8B65-61940999E7E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0105A044-A42E-4E2F-8B65-61940999E7E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0105A044-A42E-4E2F-8B65-61940999E7E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0105A044-A42E-4E2F-8B65-61940999E7E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

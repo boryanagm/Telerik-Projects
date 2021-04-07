@@ -1,9 +1,7 @@
-﻿using LayeredArchitecture.Models;
-
+﻿using LayeredArchitecture.Data.Models;
+using LayeredArchitecture.Services.Contracts;
 using Microsoft.AspNetCore.Mvc;
-
-using System.Collections.Generic;
-using System.Linq;
+using System;
 
 namespace LayeredArchitecture.Controllers
 {
@@ -11,51 +9,37 @@ namespace LayeredArchitecture.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly List<User> users = new List<User>
+        private readonly IUserService userService;
+        public UsersController(IUserService userService)
         {
-            new User
-            {
-                Id = 1,
-                Name = "Bruce Banner",
-                Email = "bruce@avengers.com"
-            },
-            new User
-            {
-                Id = 2,
-                Name = "Tony Stark",
-                Email = "tony@avengers.com"
-            },
-        };
+            this.userService = userService;
+        }
 
         [HttpGet("")]
         public IActionResult Get()
         {
-            return this.Ok(this.users);
+            return this.Ok(this.userService.GetAll());
         }
 
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            var user = this.users.FirstOrDefault(user => user.Id == id);
+            try
+            {
+                var user = this.userService.Get(id);
 
-            if (user == null)
+                return this.Ok(user);
+            }
+            catch (ArgumentNullException)
             {
                 return this.NotFound();
             }
-
-            return this.Ok(user);
         }
 
         [HttpPost("")]
         public IActionResult Post([FromBody] User model)
         {
-            if (model == null)
-            {
-                return this.BadRequest();
-            }
-
-            //Does NOT work => controllers are resolved on each request - demo purposes
-            this.users.Add(model);
+            var user = this.userService.Create(model);
 
             return this.Created("post", model);
         }
@@ -63,28 +47,28 @@ namespace LayeredArchitecture.Controllers
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] User model)
         {
-            if (id < 1 || model == null)
-                return this.BadRequest();
-
-            var user = this.users.FirstOrDefault(user => user.Id == id);
-
-            user.Name = model.Name;
-            user.Email = model.Email;
-
-            return this.Ok();
+            try
+            {
+                var user = this.userService.Update(id, model);
+                return this.Ok(model);
+            }
+            catch (ArgumentNullException)
+            {
+                return this.Conflict();
+            }
         }
 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var user = this.users.FirstOrDefault(user => user.Id == id);
+            var success = this.userService.Delete(id);
 
-            if (user == null)
-                return this.NotFound();
+            if (success)
+            {
+                return this.NoContent();
+            }
 
-            this.users.Remove(user);
-
-            return this.NoContent();
+            return this.NotFound();
         }
     }
 }
