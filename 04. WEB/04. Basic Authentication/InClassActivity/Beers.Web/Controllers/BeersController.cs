@@ -1,8 +1,9 @@
 ﻿
 using Beers.Services.Contracts;
 using Beers.Services.Models;
-
+using Beers.Web.Helpers;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace Beers.Web.Controllers
 {
@@ -11,11 +12,13 @@ namespace Beers.Web.Controllers
 	public class BeersController : ControllerBase
 	{
 		private readonly IBeerService beerService;
+        private readonly IAuthHelper authHelper;
 
-		public BeersController(IBeerService beerService)
+        public BeersController(IBeerService beerService, IAuthHelper authHelper)
 		{
 			this.beerService = beerService;
-		}
+            this.authHelper = authHelper;
+        }
 
 		// GET api/beers/:id
 		[HttpGet("{id}")]
@@ -32,6 +35,21 @@ namespace Beers.Web.Controllers
 		{
 			var beers = this.beerService.GetAll();
 			return Ok(beers);
+		}
+
+		[HttpPut("{id}")]
+		public IActionResult Put([FromHeader] string authorization, int id, string name)
+		{
+            try
+            {
+				this.authHelper.TryGetUser(authorization);
+				var beerToUpdate = this.beerService.Update(id, name);
+				return Ok(beerToUpdate);
+            }
+            catch (Exception e)
+            {
+				return BadRequest(e.Message);
+            }
 		}
 
 		// GET api/beers/delete/:id

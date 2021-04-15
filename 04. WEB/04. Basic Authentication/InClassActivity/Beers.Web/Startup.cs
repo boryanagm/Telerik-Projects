@@ -6,6 +6,7 @@ using Beers.Data;
 using Microsoft.EntityFrameworkCore;
 using Beers.Services.Contracts;
 using Beers.Services;
+using Beers.Web.Helpers;
 
 namespace Beers.Web
 {
@@ -34,6 +35,7 @@ namespace Beers.Web
 			services.AddScoped<IBeerService, BeerService>();
 			services.AddScoped<IBreweryService, BreweryService>();
 			services.AddScoped<IUserService, UserService>();
+			services.AddScoped<IAuthHelper, AuthHelper>();
 		}
 
 		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

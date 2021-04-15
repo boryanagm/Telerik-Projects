@@ -10,5 +10,6 @@ namespace Beers.Services.Contracts
 		BeerDTO Get(int id);
 		List<Beer> GetAll();
 		void Delete(int id);
+		Beer Update(int id, string name);
 	}
 }

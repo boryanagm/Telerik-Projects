@@ -15,7 +15,7 @@ namespace Beers.Web.Helpers
         {
             this.userService = userService;
         }
-        public User TryDeleteBeer(string authorizationHeader)
+        public User TryGetUser(string authorizationHeader)
         {
             try
             {
@@ -23,20 +23,6 @@ namespace Beers.Web.Helpers
             }
             catch (Exception)
             {
-
-                throw new ArgumentException("Invalid username");
-            }
-        }
-
-        public User TryUpdateBeer(string authorizationHeader)
-        {
-            try
-            {
-                return this.userService.GetByUsername(authorizationHeader);
-            }
-            catch (Exception)
-            {
-
                 throw new ArgumentException("Invalid username");
             }
         }

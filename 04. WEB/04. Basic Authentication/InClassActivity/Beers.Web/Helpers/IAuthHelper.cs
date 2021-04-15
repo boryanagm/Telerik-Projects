@@ -8,8 +8,7 @@ namespace Beers.Web.Helpers
 {
     public interface IAuthHelper
     {
-        User TryDeleteBeer(string authorizationHeader);
-        User TryUpdateBeer(string authorizationHeader);
+        User TryGetUser(string authorizationHeader);
 
     }
 }
