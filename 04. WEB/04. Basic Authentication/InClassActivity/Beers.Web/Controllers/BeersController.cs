@@ -54,10 +54,18 @@ namespace Beers.Web.Controllers
 
 		// GET api/beers/delete/:id
 		[HttpGet("delete/{id}")]
-		public IActionResult Delete(int id)
+		public IActionResult Delete([FromHeader] string authorization, int id)
 		{
-			this.beerService.Delete(id);
-			return NoContent();
+            try
+            {
+				this.authHelper.TryGetUser(authorization);
+				this.beerService.Delete(id);
+				return NoContent();
+            }
+            catch (Exception e)
+            {
+				return BadRequest(e.Message);
+            }
 		}
 	}
 }
