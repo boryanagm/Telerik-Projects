@@ -4,6 +4,7 @@ using Beers.Services.Contracts;
 using Beers.Services.Models;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace Beers.Services
 {
@@ -28,5 +29,9 @@ namespace Beers.Services
 
 			return dto;
 		}
+
+		public User GetByUsername(string username) => this.dbContext.Users
+			.FirstOrDefault(x => x.Name == username) 
+			?? throw new ArgumentNullException();
 	}
 }
