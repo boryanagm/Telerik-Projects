@@ -49,6 +49,18 @@ namespace Beers.Services
 
 			return beers;
 		}
+		public Beer Create(int id, Beer beer)
+		{
+			var user = this.dbContext.Users
+				.FirstOrDefault(u => u.UserId == id)
+				?? throw new ArgumentNullException();
+
+			this.dbContext.Beers.Add(beer);
+			beer.UserId = user.UserId;
+			this.dbContext.SaveChanges();
+
+			return beer;
+		}
 
 		public Beer Update(int id, string name)
 		{

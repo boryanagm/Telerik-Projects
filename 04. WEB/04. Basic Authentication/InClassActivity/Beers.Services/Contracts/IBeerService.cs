@@ -9,6 +9,7 @@ namespace Beers.Services.Contracts
 	{
 		BeerDTO Get(int id);
 		List<Beer> GetAll();
+		Beer Create(int id, Beer beer);
 		void Delete(int id);
 		Beer Update(int id, string name);
 	}

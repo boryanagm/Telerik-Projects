@@ -1,4 +1,5 @@
 ﻿
+using Beers.Data.Models;
 using Beers.Services.Contracts;
 using Beers.Services.Models;
 using Beers.Web.Helpers;
@@ -35,6 +36,21 @@ namespace Beers.Web.Controllers
 		{
 			var beers = this.beerService.GetAll();
 			return Ok(beers);
+		}
+
+		[HttpPost("")]
+		public IActionResult Post([FromHeader] string authorization, [FromBody] Beer model, int id)
+		{
+			try
+			{
+				this.authHelper.TryGetUser(authorization);
+				var beer = this.beerService.Create(id, model);
+				return Created("post", beer);
+			}
+			catch (Exception e)
+			{
+				return BadRequest(e.Message);
+			}
 		}
 
 		[HttpPut("{id}")]

@@ -14,5 +14,6 @@ namespace Beers.Data.Models
 		public List<UserRole> Roles { get; set; }
 
 		public List<Rating> Ratings { get; set; } = new List<Rating>();
+		public List<Beer> Beers { get; set; } = new List<Beer>();
 	}
 }
