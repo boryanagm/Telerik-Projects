@@ -50,9 +50,24 @@ namespace Beers.Services
 			return beers;
 		}
 
+		public Beer Update(int id, string name)
+		{
+			var beer = this.dbContext.Beers
+					.FirstOrDefault(beer => beer.BeerId == id)
+					?? throw new ArgumentNullException();
+
+			beer.Name = name;
+			this.dbContext.SaveChanges();
+
+			return beer;
+		}
+
 		public void Delete(int id)
 		{
-			var beer = this.dbContext.Beers.FirstOrDefault(beer => beer.BeerId == id);
+			var beer = this.dbContext.Beers
+				.FirstOrDefault(beer => beer.BeerId == id)
+				?? throw new ArgumentNullException();
+
 			this.dbContext.Beers.Remove(beer);
 			this.dbContext.SaveChanges();
 		}
