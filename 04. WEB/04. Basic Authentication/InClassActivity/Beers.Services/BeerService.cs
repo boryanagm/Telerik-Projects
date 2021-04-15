@@ -83,5 +83,21 @@ namespace Beers.Services
 			this.dbContext.Beers.Remove(beer);
 			this.dbContext.SaveChanges();
 		}
+
+		public Beer Rate(int beerId, int userId, int rate)
+		{
+			var beer = this.dbContext.Beers
+					.FirstOrDefault(beer => beer.BeerId == beerId)
+					?? throw new ArgumentNullException();
+
+			var user = this.dbContext.Users
+				.FirstOrDefault(u => u.UserId == userId)
+				?? throw new ArgumentNullException();
+
+			beer.Ratings.Add(new Rating { BeerId = beerId, UserId = userId, Value = rate });
+			this.dbContext.SaveChanges();
+
+			return beer;
+		}
 	}
 }

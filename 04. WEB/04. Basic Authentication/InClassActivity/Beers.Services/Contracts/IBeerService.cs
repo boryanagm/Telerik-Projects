@@ -12,5 +12,6 @@ namespace Beers.Services.Contracts
 		Beer Create(int id, Beer beer);
 		void Delete(int id);
 		Beer Update(int id, string name);
+		Beer Rate(int beerId, int userId, int rate);
 	}
 }

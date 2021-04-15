@@ -83,5 +83,20 @@ namespace Beers.Web.Controllers
 				return BadRequest(e.Message);
             }
 		}
+
+		[HttpPost("{beerId}/rate")]
+		public IActionResult Rate([FromHeader] string authorization, int beerId, int userId, int rate)
+		{
+            try
+            {
+				this.authHelper.TryGetUser(authorization);
+				var beerToRate = this.beerService.Rate(beerId, userId, rate);
+				return Ok(beerToRate);
+            }
+            catch (Exception e)
+            {
+				return BadRequest(e.Message);
+			}
+		}
 	}
 }
