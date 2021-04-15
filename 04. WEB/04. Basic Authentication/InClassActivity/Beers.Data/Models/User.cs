@@ -11,6 +11,8 @@ namespace Beers.Data.Models
 		[Required, MinLength(3), MaxLength(50)]
 		public string Name { get; set; }
 
+		public List<UserRole> Roles { get; set; }
+
 		public List<Rating> Ratings { get; set; } = new List<Rating>();
 	}
 }
