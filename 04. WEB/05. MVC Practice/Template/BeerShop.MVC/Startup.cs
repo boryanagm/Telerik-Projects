@@ -2,12 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using BeerShop.Data;
+using BeerShop.Services;
+using BeerShop.Services.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace BeerShop.MVC
 {
@@ -24,6 +28,17 @@ namespace BeerShop.MVC
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddControllersWithViews();
+
+			services.AddDbContext<BeerShopContext>(options => options
+			.UseLoggerFactory(LoggerFactory.Create(builder => builder.AddConsole()))
+			.UseSqlServer(this.Configuration.GetConnectionString("DefaultConnection")));
+			//.UseSqlServer(@"Server=.\SQLEXPRESS;Database=BeerShop;Integrated Security=true;"));
+
+			services.AddControllers().AddNewtonsoftJson(options =>
+			options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
+			services.AddScoped<IBeerService, BeerService>();
+			services.AddScoped<IUserService, UserService>();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

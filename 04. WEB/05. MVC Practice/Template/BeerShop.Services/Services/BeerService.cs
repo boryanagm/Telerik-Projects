@@ -31,7 +31,11 @@ namespace BeerShop.Services
 
 		public IEnumerable<Beer> GetAll()
 		{
-			var beers = this.context.Beers;
+			var beers = this.context.Beers
+				.Include(x => x.Brewery)
+				.Include(x => x.Ratings)
+				  .ThenInclude(x => x.User)
+					.ThenInclude(user => user.Role);
 
 			return beers;
 		}

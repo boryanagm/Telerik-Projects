@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 using BeerShop.MVC.Models;
-
+using BeerShop.Services.Contracts;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -13,15 +13,20 @@ namespace BeerShop.MVC.Controllers
 {
 	public class HomeController : Controller
 	{
-		private readonly ILogger<HomeController> _logger;
+        private readonly IUserService userService;
+        private readonly IBeerService beerService;
 
-		public HomeController(ILogger<HomeController> logger)
+        public HomeController(IUserService userService, IBeerService beerService)
 		{
-			_logger = logger;
-		}
+            this.userService = userService;
+            this.beerService = beerService;
+        }
 
 		public IActionResult Index()
 		{
+			var beers = this.beerService.GetAll();
+			ViewData["Beers"] = beers.ToList();
+
 			return View();
 		}
 

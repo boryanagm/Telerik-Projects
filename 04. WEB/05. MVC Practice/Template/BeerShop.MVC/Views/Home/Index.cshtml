@@ -1,8 +1,33 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Beer Shop";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Beers</h1>
+
+    <div>
+
+        @{
+            var beers = (List<BeerShop.Data.Models.Beer>)ViewData["Beers"];
+
+
+            foreach (var beer in beers)
+            {
+            <p>
+                <h3>Beer: @beer.Name</h3><br/>
+                <p>Brewery: @beer.Brewery.Name</p><br/>
+                <p>Alc%: @beer.Abv</p><br/>
+                @{
+                    <p>Rating:</p>
+                    foreach (var rating in beer.Ratings)
+                    {
+                        <p>@rating.User.Name (@rating.User.Role.Name) : @rating.Value/5</p>
+                    }
+                }
+
+             </p>
+            }
+        }
+    </div>
+           
 </div>
