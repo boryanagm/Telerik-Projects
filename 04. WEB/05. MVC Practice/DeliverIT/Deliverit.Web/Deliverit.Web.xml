@@ -1,0 +1,380 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Deliverit.Web</name>
+    </assembly>
+    <members>
+        <member name="T:Deliverit.Web.Controllers.CitiesController">
+            <summary>
+            Class CitiesController.
+            Handles all city services
+            Implements the <see cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+            </summary>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.CitiesController.Get(System.Guid)">
+            <summary>
+            Shows city by ID.
+            </summary>
+            <param name="id">The identifier.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.CitiesController.GetAll">
+            <summary>
+            Shows all cities.
+            </summary>
+            <returns>IActionResult.</returns>
+        </member>
+        <member name="T:Deliverit.Web.Controllers.Deliverit.Web.Controllers.CountriesController">
+            <summary>
+            Class CountriesController.
+            Handles all contry services
+            Implements the <see cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+            </summary>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.Deliverit.Web.Controllers.CountriesController.Get(System.Guid)">
+            <summary>
+            Shows country by ID.
+            </summary>
+            <param name="id">The identifier.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.Deliverit.Web.Controllers.CountriesController.GetAll">
+            <summary>
+            Shows all countries.
+            </summary>
+        </member>
+        <member name="T:Deliverit.Web.Controllers.CustomersController">
+            <summary>
+            Class CustomersController.
+            Handles all customer services.
+            Implements the <see cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="M:Deliverit.Web.Controllers.CustomersController.Get(System.String,System.Guid)">
+            <summary>
+            Gets a customer by email.
+            </summary>
+            <param name="authorizationEmail">The authorization email.</param>
+            <param name="id">The identifier of the customer.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.CustomersController.GetAll(System.String)">
+            <summary>
+            Gets all customers.
+            </summary>
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.CustomersController.GetCount">
+            <summary>
+            Gets the count of all customers.
+            </summary>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.CustomersController.Post(DeliverIT.Models.Customer)">
+            <summary>
+            Creates a new customer.
+            </summary>
+            <param name="customer">The customer that is to be created.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.CustomersController.Put(System.String,System.Guid,System.Guid)">
+            <summary>
+            Updates a customer's information.
+            </summary>
+            <param name="authorizationEmail">The authorization email.</param>
+            <param name="id">The identifier.</param>
+            <param name="addressId">The address identifier.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.CustomersController.Delete(System.String,System.Guid)">
+            <summary>
+            Deletes a customer.
+            </summary>
+            <param name="authorizationEmail">The authorization email.</param>
+            <param name="id">The identifier.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.CustomersController.GetIncomingParcels(System.String,System.Guid)">
+            <summary>
+            Gets all incoming parcels of a customer by his ID.
+            </summary>
+            <param name="authorizationEmail">The authorization email.</param>
+            <param name="id">The identifier.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.CustomersController.GetPastParcels(System.String,System.Guid)">
+            <summary>
+            Gets all past parcels of a customer by his ID.
+            </summary>
+            <param name="authorizationEmail">The authorization email.</param>
+            <param name="id">The identifier.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.CustomersController.GetByKeyWord(System.String,System.String)">
+            <summary>
+            Gets customers by a key word.
+            </summary>
+            <param name="authorizationEmail">The authorization email.</param>
+            <param name="key">The key.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.CustomersController.GetByMultipleCriteria(System.String,Deliverit.Services.CustomerFilter)">
+            <summary>
+            Gets customers by multiple criteria.
+            </summary>
+            <param name="authorizationEmail">The authorization email.</param>
+            <param name="customerFilter">The customer filter.</param>
+        </member>
+        <member name="T:Deliverit.Web.Controllers.EmployeesController">
+            <summary>
+            Class EmployeesController.
+            Handles all Employee services.
+            Implements the <see cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="M:Deliverit.Web.Controllers.EmployeesController.Get(System.String,System.Guid)">
+            <summary>
+            Gets an employee by his ID.
+            </summary>
+            <param name="authorizationEmail">The authorization email.</param>
+            <param name="id">The identifier.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.EmployeesController.GetAll(System.String)">
+            <summary>
+            Gets all employees.
+            </summary>
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.EmployeesController.Post(System.String,DeliverIT.Models.Employee)">
+            <summary>
+            Creates an employee.
+            </summary>
+            <param name="authorizationEmail">The authorization email.</param>
+            <param name="employee">The employee that is to be created.</param>
+            <returns>IActionResult.</returns>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.EmployeesController.Put(System.String,System.Guid,System.Guid)">
+            <summary>
+            Updates an employee.
+            </summary>
+            <param name="authorizationEmail">The authorization email.</param>
+            <param name="id">The identifier.</param>
+            <param name="addressId">The address identifier.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.EmployeesController.Delete(System.String,System.Guid)">
+            <summary>
+            Deletes an employee by Id.
+            </summary>
+            <param name="authorizationEmail">The authorization email.</param>
+            <param name="id">The identifier.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.EmployeesController.Restore(System.String,System.Guid)">
+            <summary>
+            Restores the specified employee by Id.
+            </summary>
+            <param name="authorizationEmail">The authorization email.</param>
+            <param name="id">The identifier.</param>
+            <returns>IActionResult.</returns>
+        </member>
+        <member name="T:Deliverit.Web.Controllers.ParcelController">
+            <summary>
+            Class ParcelController.
+            Handles all parcel services.
+            Implements the <see cref="T:Microsoft.AspNetCore.Mvc.Controller" />
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.Controller" />
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ParcelController.Get(System.String,System.Guid)">
+            <summary>
+            Gets a parcel by ID.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ParcelController.GetAll">
+            <summary>
+            Gets all Parcels.
+            </summary>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ParcelController.Post(System.String,Deliverit.Services.Models.CreateParcelDTO)">
+            <summary>
+            Creates a parcel.
+            </summary>
+            <param name="authorizationEmail">The authorization email.</param>
+            <param name="parcel">The parcel.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ParcelController.Put(System.String,System.Guid,Deliverit.Services.Models.UpdateParcelDTO)">
+            <summary>
+            Updates a parcel by Id.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="parcel">The parcel.</param>
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ParcelController.Delete(System.String,System.Guid)">
+            <summary>
+            Deletes a parcel by Id.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ParcelController.SearchByEmail(System.String,System.String)">
+            <summary>
+            Filters parcels by e-mail.
+            </summary>
+            <param name="email">The email.</param>
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ParcelController.SearchByName(System.String,System.String,System.String)">
+            <summary>
+            Filters parcels by customer's first and last names.
+            </summary>
+            <param name="firstname">The firstname.</param>
+            <param name="lastname">The lastname.</param>
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ParcelController.SearchByIncomingShippment(System.String,System.Guid)">
+            <summary>
+            Filters all of a customer's incoming parcels by his ID.
+            </summary>
+            <param name="Id">The identifier.</param>
+            <returns>IActionResult.</returns>
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ParcelController.GetByWarehouse(System.String,System.Guid)">
+            <summary>
+            Filters by warehouse Id.
+            </summary>
+            <param name="Id">The identifier.</param>
+            <returns>IActionResult.</returns>
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ParcelController.GetByCustomer(System.String,System.Guid)">
+            <summary>
+            Filters parcels by customer Id.
+            </summary>
+            <param name="Id">The identifier.</param>
+            <returns>IActionResult.</returns>
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ParcelController.GetByWeight(System.String,System.Int32)">
+            <summary>
+            Filters parcels by weight.
+            </summary>
+            <param name="weight">The weight.</param>
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ParcelController.GetByCategory(System.String,System.String)">
+            <summary>
+            Filters parcels by category.
+            </summary>
+            <param name="category">The category.</param>   
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ParcelController.GetByMultipleCriteria(System.String,System.String,System.Guid)">
+            <summary>
+            Filters parcels by category and Id.
+            </summary>
+            <param name="category">The category.</param>   
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ParcelController.SortByWeightOrDate(System.String,System.String)">
+            <summary>
+            Sorts by weight or arrival date.
+            </summary>        
+            <param name="criteria">The criteria.</param> 
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="T:Deliverit.Web.Controllers.ShipmentController">
+            <summary>
+            Class ShipmentController.
+            Handles all shipment services.
+            Implements the <see cref="T:Microsoft.AspNetCore.Mvc.Controller" />
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.Controller" />
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ShipmentController.Get(System.String,System.Guid)">
+            <summary>
+            Gets a shipment by Id.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ShipmentController.GetAll(System.String)">
+            <summary>
+            Gets all shipments.
+            </summary>
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ShipmentController.Post(System.String,Deliverit.Services.Models.CreateShipmentDTO)">
+            <summary>
+            Creates a shipment.
+            </summary>
+            <param name="shipment">The shipment.</param>
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ShipmentController.Delete(System.String,System.Guid)">
+            <summary>
+            Deletes a shipment.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ShipmentController.Put(System.String,System.Guid,Deliverit.Services.Models.ShipmentDTO)">
+            <summary>
+            Updates a shipment.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="shipment">The shipment update data.</param>
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ShipmentController.FilterShipments(System.String,System.Guid)">
+            <summary>
+            Filters shipments by Warehouse.
+            </summary>
+            <param name="Id">The identifier of the warehouse.</param>
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.ShipmentController.FilterCustomers(System.String,System.Guid)">
+            <summary>
+            Filters shipments by customers.
+            </summary>
+            <param name="Id">The identifier of the customer.</param>
+            <param name="authorizationEmail">The authorization email.</param>
+        </member>
+        <member name="T:Deliverit.Web.Controllers.WarehousesController">
+            <summary>
+            Class WarehousesController.
+            Handles all warehouse services.
+            Implements the <see cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+            </summary>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.WarehousesController.Get(System.Guid)">
+            <summary>
+            Gets the a warehouse by Id.
+            </summary>
+            <param name="id">The identifier.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.WarehousesController.GetAll">
+            <summary>
+            Gets all warehouses.
+            </summary>
+            <returns>IActionResult.</returns>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.WarehousesController.Post(System.String,DeliverIT.Models.Warehouse)">
+            <summary>
+            Creates a warehouse.
+            </summary>
+            <param name="authorizationEmail">The authorization email.</param>
+            <param name="warehouse">The warehouse.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.WarehousesController.Put(System.String,System.Guid,System.Guid)">
+            <summary>
+            Updates a warehouse.
+            </summary>
+            <param name="authorizationEmail">The authorization email.</param>
+            <param name="id">The identifier.</param>
+            <param name="addressId">The address identifier.</param>
+        </member>
+        <member name="M:Deliverit.Web.Controllers.WarehousesController.Delete(System.String,System.Guid)">
+            <summary>
+            Deletes a warehouse.
+            </summary>
+            <param name="authorizationEmail">The authorization email.</param>
+            <param name="id">The identifier.</param>
+            <returns>IActionResult.</returns>
+        </member>
+    </members>
+</doc>
