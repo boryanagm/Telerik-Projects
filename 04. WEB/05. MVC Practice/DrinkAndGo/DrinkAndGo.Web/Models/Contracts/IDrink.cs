@@ -8,8 +8,8 @@ namespace DrinkAndGo.Web.Models.Contracts
     public interface IDrink
     {
         // ICollection vs IEnumerable
-        ICollection<Drink> Drinks { get; set; }
-        ICollection<Drink> PreferredDrinks { get; set; }
+        ICollection<Drink> Drinks { get; }
+        ICollection<Drink> PreferredDrinks { get; }
         Drink GetDrinkById(int drinkId);
     }
 }
