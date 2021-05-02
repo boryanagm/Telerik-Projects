@@ -1,12 +1,9 @@
 ﻿using DrinkAndGo.Web.Models.Contracts;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace DrinkAndGo.Web.Models.Mocks
+namespace DrinkAndGo.Web.Models.Services
 {
-    public class MockCategory : ICategory
+    public class CategoryService : ICategory
     {
         public ICollection<Category> Categories => new List<Category>
         {

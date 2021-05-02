@@ -2,13 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
-namespace DrinkAndGo.Web.Models.Mocks
+namespace DrinkAndGo.Web.Models.Services
 {
-    public class MockDrink : IDrink
+    public class DrinkService : IDrink
     {
-        private readonly ICategory categoryRepository = new MockCategory();
+        private readonly ICategory categoryRepository = new CategoryService();
 
         public ICollection<Drink> Drinks
         {

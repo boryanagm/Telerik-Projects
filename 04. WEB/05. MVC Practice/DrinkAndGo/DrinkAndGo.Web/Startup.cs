@@ -1,14 +1,10 @@
 using DrinkAndGo.Web.Models.Contracts;
-using DrinkAndGo.Web.Models.Mocks;
+using DrinkAndGo.Web.Models.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace DrinkAndGo.Web
 {
@@ -26,8 +22,8 @@ namespace DrinkAndGo.Web
         {
             services.AddControllersWithViews();
 
-            services.AddTransient<IDrink, MockDrink>();
-            services.AddTransient<ICategory, MockCategory>();
+            services.AddTransient<IDrink, DrinkService>();
+            services.AddTransient<ICategory, CategoryService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
