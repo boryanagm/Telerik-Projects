@@ -1,7 +1,9 @@
+using DrinkAndGo.Web.Database;
 using DrinkAndGo.Web.Models.Contracts;
 using DrinkAndGo.Web.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -21,6 +23,9 @@ namespace DrinkAndGo.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<DrinkAndGoDbContext>(options => 
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddTransient<IDrink, DrinkService>();
             services.AddTransient<ICategory, CategoryService>();
