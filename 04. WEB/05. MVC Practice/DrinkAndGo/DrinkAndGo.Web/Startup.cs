@@ -1,4 +1,5 @@
 using DrinkAndGo.Web.Database;
+using DrinkAndGo.Web.Database.Seed;
 using DrinkAndGo.Web.Models.Contracts;
 using DrinkAndGo.Web.Models.Repositories;
 using DrinkAndGo.Web.Services;
@@ -55,6 +56,8 @@ namespace DrinkAndGo.Web
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            DbInitializer.Seed(app);
         }
     }
 }
