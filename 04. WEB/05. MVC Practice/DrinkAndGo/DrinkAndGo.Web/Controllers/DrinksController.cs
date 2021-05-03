@@ -1,4 +1,5 @@
 ﻿using DrinkAndGo.Web.Models.Contracts;
+using DrinkAndGo.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DrinkAndGo.Web.Controllers
@@ -16,8 +17,13 @@ namespace DrinkAndGo.Web.Controllers
 
         public IActionResult List()
         {
-            var drinks = drinkService.Drinks;
-            return View(drinks);
+            ViewBag.Name = "DotNet, How?";
+
+            var viewModel = new DrinkListViewModel();
+            viewModel.Drinks = drinkService.Drinks;
+            viewModel.CurrentCategory = "DrinkCategory";
+
+            return View(viewModel);
         }
     }
 }

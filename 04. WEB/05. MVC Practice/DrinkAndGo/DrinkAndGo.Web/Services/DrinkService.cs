@@ -1,15 +1,16 @@
-﻿using DrinkAndGo.Web.Models.Contracts;
+﻿using DrinkAndGo.Web.Models;
+using DrinkAndGo.Web.Models.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DrinkAndGo.Web.Models.Services
+namespace DrinkAndGo.Web.Services
 {
     public class DrinkService : IDrink
     {
         private readonly ICategory categoryRepository = new CategoryService();
 
-        public ICollection<Drink> Drinks
+        public IEnumerable<Drink> Drinks
         {
             get => new List<Drink>
                 {
@@ -56,7 +57,7 @@ namespace DrinkAndGo.Web.Models.Services
                         ImageThumbnailUrl = "http://imgh.us/juiceS.jpg"
                     }};
         }
-        public ICollection<Drink> PreferredDrinks { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public IEnumerable<Drink> PreferredDrinks { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public Drink GetDrinkById(int drinkId)
         {

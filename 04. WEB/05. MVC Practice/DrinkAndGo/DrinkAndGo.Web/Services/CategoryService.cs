@@ -1,7 +1,8 @@
-﻿using DrinkAndGo.Web.Models.Contracts;
+﻿using DrinkAndGo.Web.Models;
+using DrinkAndGo.Web.Models.Contracts;
 using System.Collections.Generic;
 
-namespace DrinkAndGo.Web.Models.Services
+namespace DrinkAndGo.Web.Services
 {
     public class CategoryService : ICategory
     {

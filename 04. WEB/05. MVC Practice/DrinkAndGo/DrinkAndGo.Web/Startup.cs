@@ -1,5 +1,5 @@
 using DrinkAndGo.Web.Models.Contracts;
-using DrinkAndGo.Web.Models.Services;
+using DrinkAndGo.Web.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;

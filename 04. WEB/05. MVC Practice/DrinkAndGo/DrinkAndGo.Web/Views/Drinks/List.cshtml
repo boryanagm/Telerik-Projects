@@ -1,10 +1,13 @@
-﻿@model ICollection<Drink>    
+﻿@using DrinkAndGo.Web.ViewModels
+@model DrinkListViewModel
 
 <div>
     <h2>All drinks are shown here.</h2>
 </div>
 
-@foreach (var drink in Model)
+<h2>@Model.CurrentCategory</h2>
+
+@foreach (var drink in Model.Drinks)
 {
     <div>
         <h4>Drink name: @drink.Name</h4>
