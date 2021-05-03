@@ -1,7 +1,4 @@
-﻿@using DrinkAndGo.Web.ViewModels
-@model DrinkListViewModel
-
-<div>
+﻿<div>
     <h2>All drinks are shown here.</h2>
 </div>
 
@@ -9,8 +6,24 @@
 
 @foreach (var drink in Model.Drinks)
 {
-    <div>
-        <h4>Drink name: @drink.Name</h4>
-        <p>Price: @drink.Price.ToString("c")</p>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="img-thumbnail">
+                <img src="@drink.ImageThumbnailUrl" alt="" class="img-fluid" />
+                <div class="figure-caption">
+                    <h3 class="pull-right">@drink.Price.ToString("c")</h3>
+                    <h3>
+                        <a>@drink.Name</a>
+                    </h3>
+                    <p>@drink.ShortDescription</p>
+                </div>
+
+            </div>
+
+        </div>
     </div>
+    
+</div>
+    
 }

@@ -22,7 +22,7 @@ namespace DrinkAndGo.Web.Services
                         ImageUrl = "http://imgh.us/beerL_2.jpg",
                         InStock = 10,
                         IsPreferredDrink = true,
-                        ImageThumbnailUrl = "http://imgh.us/beerS_1.jpeg"
+                        ImageThumbnailUrl = "/Images/Beer.jpeg"
                     },
                     new Drink {
                         Name = "Rum & Coke",
@@ -32,7 +32,7 @@ namespace DrinkAndGo.Web.Services
                         ImageUrl = "http://imgh.us/rumCokeL.jpg",
                         InStock = 10,
                         IsPreferredDrink = false,
-                        ImageThumbnailUrl = "http://imgh.us/rumAndCokeS.jpg"
+                        ImageThumbnailUrl = "/Images/Rum.jpeg"
                     },
                     new Drink {
                         Name = "Tequila ",
@@ -42,7 +42,7 @@ namespace DrinkAndGo.Web.Services
                         ImageUrl = "http://imgh.us/tequilaL.jpg",
                         InStock = 10,
                         IsPreferredDrink = false,
-                        ImageThumbnailUrl = "http://imgh.us/tequilaS.jpg"
+                        ImageThumbnailUrl = "/Images/Tequila.jpeg"
                     },
                     new Drink
                     {
@@ -54,7 +54,7 @@ namespace DrinkAndGo.Web.Services
                         ImageUrl = "http://imgh.us/juiceL.jpg",
                         InStock = 10,
                         IsPreferredDrink = false,
-                        ImageThumbnailUrl = "http://imgh.us/juiceS.jpg"
+                        ImageThumbnailUrl = "/Images/Juice.jpeg"
                     }};
         }
         public IEnumerable<Drink> PreferredDrinks { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
