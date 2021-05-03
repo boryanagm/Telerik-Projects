@@ -7,6 +7,6 @@ namespace DrinkAndGo.Web.Models.Contracts
 {
     public interface ICategory
     {
-        ICollection<Category> Categories { get; }
+        IEnumerable<Category> Categories { get; }
     }
 }

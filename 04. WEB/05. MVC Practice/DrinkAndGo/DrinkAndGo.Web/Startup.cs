@@ -1,5 +1,6 @@
 using DrinkAndGo.Web.Database;
 using DrinkAndGo.Web.Models.Contracts;
+using DrinkAndGo.Web.Models.Repositories;
 using DrinkAndGo.Web.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,8 +28,8 @@ namespace DrinkAndGo.Web
             services.AddDbContext<DrinkAndGoDbContext>(options => 
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddTransient<IDrink, DrinkService>();
-            services.AddTransient<ICategory, CategoryService>();
+            services.AddTransient<IDrink, DrinkRepository>();
+            services.AddTransient<ICategory, CategoryRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -6,7 +6,7 @@ namespace DrinkAndGo.Web.Services
 {
     public class CategoryService : ICategory
     {
-        public ICollection<Category> Categories => new List<Category>
+        public IEnumerable<Category> Categories => new List<Category>
         {
           new Category
           {
