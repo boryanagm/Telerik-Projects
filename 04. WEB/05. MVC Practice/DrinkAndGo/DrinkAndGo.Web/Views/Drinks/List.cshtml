@@ -9,20 +9,6 @@
         @foreach (Drink drink in Model.Drinks)
         {
             @await Html.PartialAsync("DrinkPartial", drink)
-
-
-            @*<div class="col-sm-4 col-lg-4 col-md-4 align">
-                <div class="img-thumbnail">
-                    <img src="@drink.ImageThumbnailUrl" alt="" class="img-fluid" />
-                    <div class="figure-caption">
-                        <h4 class="float-right">@drink.Price.ToString("c")</h4>
-                        <h4 class="text-info">
-                            <a>@drink.Name</a>
-                        </h4>
-                        <p>@drink.ShortDescription</p>
-                    </div>
-                </div>
-            </div>*@
         }
     </div>
 </div>

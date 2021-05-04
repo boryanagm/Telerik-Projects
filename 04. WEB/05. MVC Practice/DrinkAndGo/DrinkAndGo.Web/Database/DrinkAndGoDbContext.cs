@@ -1,10 +1,6 @@
 ﻿using DrinkAndGo.Web.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 
 namespace DrinkAndGo.Web.Database
 {
@@ -17,6 +13,8 @@ namespace DrinkAndGo.Web.Database
 
         public DbSet<Drink> Drinks { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
