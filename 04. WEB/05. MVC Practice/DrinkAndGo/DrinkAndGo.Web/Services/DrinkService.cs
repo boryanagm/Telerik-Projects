@@ -6,9 +6,9 @@ using System.Linq;
 
 namespace DrinkAndGo.Web.Services
 {
-    public class DrinkService : IDrink
+    public class DrinkService : IDrinkRepository
     {
-        private readonly ICategory categoryRepository = new CategoryService();
+        private readonly ICategoryRepository categoryRepository = new CategoryService();
 
         public IEnumerable<Drink> Drinks
         {

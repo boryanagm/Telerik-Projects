@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace DrinkAndGo.Web.Models.Repositories
 {
-    public class CategoryRepository : ICategory
+    public class CategoryRepository : ICategoryRepository
     {
         private readonly DrinkAndGoDbContext context;
 

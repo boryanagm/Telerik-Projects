@@ -100,7 +100,7 @@ namespace DrinkAndGo.Web.Models
             this.context.SaveChanges();
         }
 
-        public decimal GetaShoppingCartTotal()
+        public decimal GetShoppingCartTotal()
         {
             var shoppingCartTotal = this.context.ShoppingCartItems
                 .Where(c => c.ShoppingCartId == ShoppingCartId)

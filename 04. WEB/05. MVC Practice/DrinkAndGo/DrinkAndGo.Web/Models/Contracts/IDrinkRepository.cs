@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace DrinkAndGo.Web.Models.Contracts
 {
-    public interface IDrink
+    public interface IDrinkRepository
     {
         // ICollection vs IEnumerable
         IEnumerable<Drink> Drinks { get; }

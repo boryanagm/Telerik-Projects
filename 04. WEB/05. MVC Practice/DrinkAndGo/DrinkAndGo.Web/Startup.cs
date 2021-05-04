@@ -1,10 +1,12 @@
 using DrinkAndGo.Web.Database;
 using DrinkAndGo.Web.Database.Seed;
+using DrinkAndGo.Web.Models;
 using DrinkAndGo.Web.Models.Contracts;
 using DrinkAndGo.Web.Models.Repositories;
 using DrinkAndGo.Web.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,8 +31,15 @@ namespace DrinkAndGo.Web
             services.AddDbContext<DrinkAndGoDbContext>(options => 
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddTransient<IDrink, DrinkRepository>();
-            services.AddTransient<ICategory, CategoryRepository>();
+            services.AddTransient<IDrinkRepository, DrinkRepository>();
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped(sp => ShoppingCart.GetCart(sp)); // Two customers asking at the same time for ShoppingCart object will get different instances
+
+            // services.AddMvc();
+            services.AddMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +58,8 @@ namespace DrinkAndGo.Web
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSession(); // Here?
 
             app.UseEndpoints(endpoints =>
             {

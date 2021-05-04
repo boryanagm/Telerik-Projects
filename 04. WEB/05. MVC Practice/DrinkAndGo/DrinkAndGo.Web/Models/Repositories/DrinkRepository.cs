@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace DrinkAndGo.Web.Models.Repositories
 {
-    public class DrinkRepository : IDrink
+    public class DrinkRepository : IDrinkRepository
     {
         private readonly DrinkAndGoDbContext context;
 

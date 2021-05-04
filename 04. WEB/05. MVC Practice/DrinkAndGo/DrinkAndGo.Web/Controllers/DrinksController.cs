@@ -6,10 +6,10 @@ namespace DrinkAndGo.Web.Controllers
 {
     public class DrinksController : Controller
     {
-        private readonly ICategory categoryService;
-        private readonly IDrink drinkService;
+        private readonly ICategoryRepository categoryService;
+        private readonly IDrinkRepository drinkService;
 
-        public DrinksController(ICategory categoryService, IDrink drinkService)
+        public DrinksController(ICategoryRepository categoryService, IDrinkRepository drinkService)
         {
             this.categoryService = categoryService;
             this.drinkService = drinkService;

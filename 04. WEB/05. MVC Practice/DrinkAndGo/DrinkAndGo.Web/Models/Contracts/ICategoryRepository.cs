@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace DrinkAndGo.Web.Models.Contracts
 {
-    public interface ICategory
+    public interface ICategoryRepository
     {
         IEnumerable<Category> Categories { get; }
     }

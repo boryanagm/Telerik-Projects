@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace DrinkAndGo.Web.Services
 {
-    public class CategoryService : ICategory
+    public class CategoryService : ICategoryRepository
     {
         public IEnumerable<Category> Categories => new List<Category>
         {
