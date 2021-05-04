@@ -1,37 +1,31 @@
-﻿using DrinkAndGo.Web.Models;
+﻿using DrinkAndGo.Web.Models.Contracts;
+using DrinkAndGo.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace DrinkAndGo.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IDrinkRepository drinkRepository;
 
-        public HomeController(ILogger<HomeController> logger)
+        // private readonly ILogger<HomeController> _logger;
+
+        public HomeController(IDrinkRepository drinkRepository) // ILogger<HomeController> logger
         {
-            _logger = logger;
+            this.drinkRepository = drinkRepository;
+            // _logger = logger;
         }
 
-        public IActionResult Index()
+        public ViewResult Index()
         {
-            return View();
+            var homeViewModel = new HomeViewModel
+            {
+                PreferredDrinks = this.drinkRepository.PreferredDrinks
+            };
+
+            return View(homeViewModel);
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+       
     }
 }

@@ -91,7 +91,7 @@ namespace DrinkAndGo.Web.Migrations
                     b.Property<int?>("DrinkId")
                         .HasColumnType("int");
 
-                    b.Property<string>("ShoppingCardId")
+                    b.Property<string>("ShoppingCartId")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

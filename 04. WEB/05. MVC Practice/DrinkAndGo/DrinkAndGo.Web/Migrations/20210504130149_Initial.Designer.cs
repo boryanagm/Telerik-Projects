@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DrinkAndGo.Web.Migrations
 {
     [DbContext(typeof(DrinkAndGoDbContext))]
-    [Migration("20210504085623_ShoppingCartItem")]
-    partial class ShoppingCartItem
+    [Migration("20210504130149_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -93,7 +93,7 @@ namespace DrinkAndGo.Web.Migrations
                     b.Property<int?>("DrinkId")
                         .HasColumnType("int");
 
-                    b.Property<string>("ShoppingCardId")
+                    b.Property<string>("ShoppingCartId")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
