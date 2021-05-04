@@ -27,7 +27,7 @@ namespace DrinkAndGo.Web.Controllers
             var shopingCartViewModel = new ShoppingCartViewModel
             {
                 ShoppingCart = this.shoppingCart,
-                ShopingCartTotal = this.shoppingCart.GetShoppingCartTotal()
+                ShoppingCartTotal = this.shoppingCart.GetShoppingCartTotal()
             };
 
             return View(shopingCartViewModel);
