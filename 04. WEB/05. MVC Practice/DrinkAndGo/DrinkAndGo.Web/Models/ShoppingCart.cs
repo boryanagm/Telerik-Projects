@@ -57,5 +57,29 @@ namespace DrinkAndGo.Web.Models
 
             this.context.SaveChanges();
         }
+
+        public int RemoveFromCart(Drink drink)
+        {
+            var shoppingCartItem = this.context.ShoppingCartItems
+                    .SingleOrDefault(s => s.Drink.Id == drink.Id && s.ShoppingCartId == ShoppingCartId);
+
+            var localAmount = 0;
+
+            if (shoppingCartItem != null)
+            {
+                if (shoppingCartItem.Amount > 1)
+                {
+                    shoppingCartItem.Amount--;
+                    localAmount = shoppingCartItem.Amount;
+                }
+                else
+                {
+                    this.context.ShoppingCartItems.Remove(shoppingCartItem  );
+                }
+            }
+
+            this.context.SaveChanges();
+            return localAmount;
+        }
     }
 }
