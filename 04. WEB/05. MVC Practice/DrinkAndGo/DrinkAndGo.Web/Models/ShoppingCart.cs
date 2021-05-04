@@ -90,5 +90,14 @@ namespace DrinkAndGo.Web.Models
                 .Include(s => s.Drink)
                 .ToList());
         }
+
+        public void ClearCart()
+        {
+            var cartItems = this.context.ShoppingCartItems
+                .Where(c => c.ShoppingCartId == ShoppingCartId);
+
+            this.context.ShoppingCartItems.RemoveRange(cartItems);
+            this.context.SaveChanges();
+        }
     }
 }
