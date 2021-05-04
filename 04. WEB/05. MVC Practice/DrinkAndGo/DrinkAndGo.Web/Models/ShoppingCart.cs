@@ -1,5 +1,6 @@
 ﻿using DrinkAndGo.Web.Database;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -74,12 +75,20 @@ namespace DrinkAndGo.Web.Models
                 }
                 else
                 {
-                    this.context.ShoppingCartItems.Remove(shoppingCartItem  );
+                    this.context.ShoppingCartItems.Remove(shoppingCartItem);
                 }
             }
 
             this.context.SaveChanges();
             return localAmount;
+        }
+
+        public List<ShoppingCartItem> GetShoppingCartItems()
+        {
+            return ShoppingCartItems ??
+                (ShoppingCartItems = this.context.ShoppingCartItems.Where(c => c.ShoppingCartId == ShoppingCartId)
+                .Include(s => s.Drink)
+                .ToList());
         }
     }
 }
