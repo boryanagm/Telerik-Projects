@@ -8,20 +8,23 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
         <div class="container">
-            <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
 
-                <a class="navbar-brand" href="#">Drink&Go</a>
-                  <ul class="nav navbar-nav">
-                        @await Component.InvokeAsync("ShoppingCartSummary")
-                    </ul>
-                </div>
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-link"><a asp-controller="Home" asp-action="Index"> Home </a></li>
+                    <li class="nav-link"><a asp-controller="Contacts" asp-action="Index">Contact Us</a></li>
+
+                    @await Component.InvokeAsync("ShoppingCartSummary")
+                </ul>
             </div>
-           
-        
+        </div>
     </nav>
-   
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
