@@ -64,6 +64,11 @@ namespace DrinkAndGo.Web
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "categoryFilter",
+                    pattern: "Drinks/{action}/{category?}",
+                    defaults: new { Controller = "Drinks", action = "List"});
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
