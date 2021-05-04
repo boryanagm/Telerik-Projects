@@ -99,5 +99,14 @@ namespace DrinkAndGo.Web.Models
             this.context.ShoppingCartItems.RemoveRange(cartItems);
             this.context.SaveChanges();
         }
+
+        public decimal GetaShoppingCartTotal()
+        {
+            var shoppingCartTotal = this.context.ShoppingCartItems
+                .Where(c => c.ShoppingCartId == ShoppingCartId)
+                .Select(c => c.Drink.Price * c.Amount).Sum();
+
+            return shoppingCartTotal;
+        }
     }
 }
