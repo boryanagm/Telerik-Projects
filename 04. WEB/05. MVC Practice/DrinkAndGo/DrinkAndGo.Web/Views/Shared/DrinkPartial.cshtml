@@ -10,5 +10,15 @@
                     </h4>
                     <p>@Model.ShortDescription</p>
                 </div>
+                <div class=" addToCart text-right">
+                    <p class="btn">
+                        <a class="btn-success" id="cartButton"
+                           asp-controller="ShoppingCarts"
+                           asp-action="AddToShoppingCart"
+                           asp-route-drinkId="@Model.Id">
+                            Add to cart
+                        </a>
+                    </p>
+                </div>
             </div>
         </div>
