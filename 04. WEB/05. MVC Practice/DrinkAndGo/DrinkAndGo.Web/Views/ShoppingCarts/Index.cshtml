@@ -14,7 +14,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var line in Model.ShoppingCart.ShoppingCartItems) // Model.ShoppingCart.ShoppingCartItems
+            @foreach (var line in Model.ShoppingCart.ShoppingCartItems) 
             {
                 <tr>
                     <td class="text-center">@line.Amount</td>
@@ -23,7 +23,7 @@
                     <td class="text-right">
                         @((line.Amount * line.Drink.Price).ToString("c"))
                     </td>
-                    <td class="text-center"><a class="glyphicon glyphicon-remove text-danger remove" asp-controller="ShoppingCarts" asp-action="RemoveFromShoppingCart" asp-route-Id="@line.Drink.Id"></a></td>
+                    <td class="text-center"><a class="alert alert-danger close" asp-controller="ShoppingCarts" asp-action="RemoveFromShoppingCart" asp-route-drinkId="@line.Drink.Id">x</a></td>
                 </tr>
             }
         </tbody>
