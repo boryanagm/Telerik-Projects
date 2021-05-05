@@ -85,10 +85,15 @@ namespace DrinkAndGo.Web.Models
 
         public List<ShoppingCartItem> GetShoppingCartItems()
         {
-            return ShoppingCartItems ??
-                (ShoppingCartItems = this.context.ShoppingCartItems.Where(c => c.ShoppingCartId == ShoppingCartId)
+            var shoppingCartItems = (ShoppingCartItems = this.context.ShoppingCartItems.Where(c => c.ShoppingCartId == ShoppingCartId)
                 .Include(s => s.Drink)
                 .ToList());
+
+            return shoppingCartItems;
+            //return ShoppingCartItems ??
+            //    (ShoppingCartItems = this.context.ShoppingCartItems.Where(c => c.ShoppingCartId == ShoppingCartId)
+            //    .Include(s => s.Drink)
+            //    .ToList());
         }
 
         public void ClearCart()

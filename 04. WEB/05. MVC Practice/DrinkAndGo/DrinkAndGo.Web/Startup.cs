@@ -33,6 +33,7 @@ namespace DrinkAndGo.Web
 
             services.AddTransient<IDrinkRepository, DrinkRepository>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();
+            services.AddTransient<IOrderRepository, OrderRepository>();
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped(sp => ShoppingCart.GetCart(sp)); // Two customers asking at the same time for ShoppingCart object will get different instances
@@ -63,10 +64,16 @@ namespace DrinkAndGo.Web
 
             app.UseEndpoints(endpoints =>
             {
+
                 endpoints.MapControllerRoute(
                     name: "categoryFilter",
                     pattern: "Drinks/{action}/{category?}",
                     defaults: new { Controller = "Drinks", action = "List"});
+
+                //endpoints.MapControllerRoute(
+                //   name: "cartCheckout",
+                //   pattern: "Orders/{action}/",
+                //   defaults: new { Controller = "Orders", action = "Checkout" });
 
                 endpoints.MapControllerRoute(
                     name: "default",

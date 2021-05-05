@@ -16,7 +16,7 @@ namespace DrinkAndGo.Web.Components
 
         public IViewComponentResult Invoke()
         {
-            var items = new List<ShoppingCartItem>() { new ShoppingCartItem(), new ShoppingCartItem()}; // this.shoppingCart.GetShoppingCartItems();
+            var items = this.shoppingCart.GetShoppingCartItems();
             this.shoppingCart.ShoppingCartItems = items;
 
             var shoppingCartViewModel = new ShoppingCartViewModel
