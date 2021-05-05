@@ -13,12 +13,13 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm" id="navbarSupportedContent">
 
-                <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-link"><a asp-controller="Home" asp-action="Index"> Home </a></li>
+                <ul class="nav navbar-nav">
+                    @*nav navbar-nav mr-auto*@
+                    <li class="nav-item"><a class="nav-link text-light" asp-controller="Home" asp-action="Index"> Home </a></li>
                     @await Component.InvokeAsync("CategoryMenu")
-                    <li class="nav-link"><a asp-controller="Contacts" asp-action="Index">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" asp-controller="Contacts" asp-action="Index">Contact Us</a></li>
 
                     @await Component.InvokeAsync("ShoppingCartSummary")
                 </ul>
