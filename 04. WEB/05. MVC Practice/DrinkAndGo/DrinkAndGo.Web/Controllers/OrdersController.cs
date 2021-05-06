@@ -22,5 +22,32 @@ namespace DrinkAndGo.Web.Controllers
         {
             return View();
         }
+
+        //[HttpPost]
+        //public IActionResult Checkout(Order order)
+        //{
+        //    var items = this.shoppingCart.GetShoppingCartItems();
+
+        //    this.shoppingCart.ShoppingCartItems = items;
+
+        //    if (this.shoppingCart.ShoppingCartItems.Count == 0)
+        //    {
+        //        ModelState.AddModelError("", "Your cart is empty, add some drinks first");
+        //    }
+
+        //    if (ModelState.IsValid)
+        //    {
+        //        this.orderRepository.CreateOrder(order);
+        //        this.shoppingCart.ClearCart();
+
+        //        return RedirectToAction("Checkoutcomplete");
+        //    }
+        //}
+
+        public IActionResult Checkoutcomplete()
+        {
+            ViewBag.CheckoutCompleteMessage = "Thanks for your order!";
+            return View();
+        }
     }
 }
