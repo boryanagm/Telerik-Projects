@@ -36,7 +36,11 @@ namespace DrinkAndGo.Web.Controllers
                 this.orderRepository.CreateOrder(order);
                 this.shoppingCart.ClearCart();
 
-                return RedirectToAction("CheckoutComplete");
+                //return RedirectToAction(nameof(CheckoutComplete));
+                ViewBag.CheckoutCompleteMessage = "Thanks for your order!";
+
+                return View("CheckoutComplete");
+
             }
 
             return View(order);
