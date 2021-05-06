@@ -1,10 +1,6 @@
 ﻿using DrinkAndGo.Web.Models;
 using DrinkAndGo.Web.Models.Contracts;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace DrinkAndGo.Web.Controllers
 {
@@ -23,28 +19,30 @@ namespace DrinkAndGo.Web.Controllers
             return View();
         }
 
-        //[HttpPost]
-        //public IActionResult Checkout(Order order)
-        //{
-        //    var items = this.shoppingCart.GetShoppingCartItems();
+        [HttpPost]
+        public IActionResult Checkout(Order order)
+        {
+            var items = this.shoppingCart.GetShoppingCartItems();
 
-        //    this.shoppingCart.ShoppingCartItems = items;
+            this.shoppingCart.ShoppingCartItems = items;
 
-        //    if (this.shoppingCart.ShoppingCartItems.Count == 0)
-        //    {
-        //        ModelState.AddModelError("", "Your cart is empty, add some drinks first");
-        //    }
+            if (this.shoppingCart.ShoppingCartItems.Count == 0)
+            {
+                ModelState.AddModelError("", "Your cart is empty, add some drinks first");
+            }
 
-        //    if (ModelState.IsValid)
-        //    {
-        //        this.orderRepository.CreateOrder(order);
-        //        this.shoppingCart.ClearCart();
+            if (ModelState.IsValid)
+            {
+                this.orderRepository.CreateOrder(order);
+                this.shoppingCart.ClearCart();
 
-        //        return RedirectToAction("Checkoutcomplete");
-        //    }
-        //}
+                return RedirectToAction("CheckoutComplete");
+            }
 
-        public IActionResult Checkoutcomplete()
+            return View(order);
+        }
+
+        public IActionResult CheckoutComplete()
         {
             ViewBag.CheckoutCompleteMessage = "Thanks for your order!";
             return View();

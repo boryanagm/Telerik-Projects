@@ -21,6 +21,7 @@ namespace DrinkAndGo.Web.Models.Repositories
         {
             order.OrderPlaced = DateTime.UtcNow;
             this.context.Orders.Add(order);
+            this.context.SaveChanges();
 
             var shoppingCartItems = this.shoppingCart.ShoppingCartItems;
 
