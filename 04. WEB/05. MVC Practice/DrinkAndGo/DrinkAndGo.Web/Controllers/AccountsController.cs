@@ -26,6 +26,7 @@ namespace DrinkAndGo.Web.Controllers
             });
         }
 
+        [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel loginViewModel)
         {
             if (!ModelState.IsValid)
@@ -52,6 +53,40 @@ namespace DrinkAndGo.Web.Controllers
 
             ModelState.AddModelError("", "Username/Password not found");
             return View(loginViewModel);
+        }
+
+        public ActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register(LoginViewModel loginViewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = new IdentityUser()
+                {
+                    UserName = loginViewModel.UserName
+                };
+
+                var result = await this.userManager.CreateAsync(user, loginViewModel.Password);
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+
+            return View(loginViewModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Logout(LoginViewModel loginViewModel)
+        {
+            await this.signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
         }
     }
 }
