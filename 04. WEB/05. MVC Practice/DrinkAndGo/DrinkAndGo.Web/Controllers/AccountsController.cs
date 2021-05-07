@@ -1,4 +1,5 @@
 ﻿using DrinkAndGo.Web.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ namespace DrinkAndGo.Web.Controllers
             this.userManager = userManager;
             this.signInManager = signInManager;
         }
+
         public IActionResult Login(string returnUrl)
         {
             return View(new LoginViewModel()
@@ -80,6 +82,7 @@ namespace DrinkAndGo.Web.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Logout(LoginViewModel loginViewModel)
         {
             await this.signInManager.SignOutAsync();
