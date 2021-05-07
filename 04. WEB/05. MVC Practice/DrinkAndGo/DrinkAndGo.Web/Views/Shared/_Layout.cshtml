@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
-        <div class="container">
+        <div class="container container-fluid">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -23,7 +23,9 @@
                     <li class="nav-item"><a class="nav-link text-light" asp-controller="Contacts" asp-action="Index">Contact Us</a></li>
 
                     @await Component.InvokeAsync("ShoppingCartSummary")
+                    @await Html.PartialAsync("LoginPartial")
                 </ul>
+
             </div>
         </div>
     </nav>
