@@ -23,6 +23,8 @@
                     <li class="nav-item"><a class="nav-link text-light" asp-controller="Contacts" asp-action="Index">Contact Us</a></li>
 
                     @await Component.InvokeAsync("ShoppingCartSummary")
+                </ul>
+                <ul class="navbar-nav ml-auto">
                     @await Html.PartialAsync("LoginPartial")
                 </ul>
 

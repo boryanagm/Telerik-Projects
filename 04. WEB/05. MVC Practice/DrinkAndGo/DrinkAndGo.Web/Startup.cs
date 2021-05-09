@@ -76,11 +76,6 @@ namespace DrinkAndGo.Web
                     pattern: "Drinks/{action}/{category?}",
                     defaults: new { Controller = "Drinks", action = "List"});
 
-                //endpoints.MapControllerRoute(
-                //   name: "cartCheckout",
-                //   pattern: "Orders/{action}/",
-                //   defaults: new { Controller = "Orders", action = "Checkout" });
-
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

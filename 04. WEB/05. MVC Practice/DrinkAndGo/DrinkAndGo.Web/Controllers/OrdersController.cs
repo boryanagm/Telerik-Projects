@@ -1,5 +1,6 @@
 ﻿using DrinkAndGo.Web.Models;
 using DrinkAndGo.Web.Models.Contracts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DrinkAndGo.Web.Controllers
@@ -14,12 +15,15 @@ namespace DrinkAndGo.Web.Controllers
             this.orderRepository = orderRepository;
             this.shoppingCart = shoppingCart;
         }
+
+        [Authorize]
         public IActionResult Checkout()
         {
             return View();
         }
 
         [HttpPost]
+        [Authorize]
         public IActionResult Checkout(Order order)
         {
             var items = this.shoppingCart.GetShoppingCartItems();
