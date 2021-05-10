@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace DrinkAndGo.Web.Controllers
 {
-    public class AccountsController : Controller
+   // [Route("Account")]
+    public class AccountController : Controller
     {
         private readonly UserManager<IdentityUser> userManager;
         private readonly SignInManager<IdentityUser> signInManager;
 
-        public AccountsController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
+        public AccountController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
         {
             this.userManager = userManager;
             this.signInManager = signInManager;

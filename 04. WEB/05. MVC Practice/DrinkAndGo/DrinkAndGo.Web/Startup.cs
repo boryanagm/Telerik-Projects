@@ -52,6 +52,7 @@ namespace DrinkAndGo.Web
         {
             if (env.IsDevelopment())
             {
+                //app.UseStatusCodePagesWithRedirects("/Errors/{0}");
                 app.UseDeveloperExceptionPage();
             }
             else
@@ -70,7 +71,6 @@ namespace DrinkAndGo.Web
 
             app.UseEndpoints(endpoints =>
             {
-
                 endpoints.MapControllerRoute(
                     name: "categoryFilter",
                     pattern: "Drinks/{action}/{category?}",

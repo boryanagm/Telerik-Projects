@@ -23,7 +23,7 @@ namespace DrinkAndGo.Web.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+       // [Authorize]
         public IActionResult Checkout(Order order)
         {
             var items = this.shoppingCart.GetShoppingCartItems();
